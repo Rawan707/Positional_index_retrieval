@@ -1,0 +1,8 @@
+com\ir\spark\SearchEngineSpark$FileToPair.class
+com\ir\spark\SearchEngineSpark$GroupToDocPositionsFunction.class
+com\ir\spark\SearchEngineSpark$TermToPair.class
+com\ir\spark\SearchEngineSpark$TermPositionFlatMap.class
+com\ir\spark\SearchEngineSpark.class
+com\ir\spark\SearchEngineSpark$DocumentPosition.class
+com\ir\spark\SearchEngineSpark$DocumentScore.class
+com\ir\spark\SearchEngineSpark$TermPosition.class

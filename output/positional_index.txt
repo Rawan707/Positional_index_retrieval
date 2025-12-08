@@ -1,0 +1,16 @@
+<10    doc10: 1 >
+<angels    doc7: 2 ; doc8: 2 ; doc9: 2 >
+<antony    doc1: 2 ; doc2: 2 ; doc6: 2 >
+<brutus    doc1: 3 ; doc2: 3 ; doc4: 2 >
+<caeser    doc1: 4 ; doc2: 4 ; doc4: 3 ; doc5: 2 ; doc6: 3 >
+<calpurnia    doc2: 5 >
+<cleopatra    doc1: 5 >
+<fear    doc7: 4 ; doc8: 4 ; doc10: 3 >
+<fools    doc7: 3 ; doc8: 3 ; doc9: 3 ; doc10: 2 >
+<in    doc7: 5 ; doc8: 5 ; doc9: 4 ; doc10: 4 >
+<mercy    doc1: 6 ; doc3: 2 ; doc4: 4 ; doc5: 3 ; doc6: 4 >
+<rush    doc7: 6 ; doc8: 6 ; doc9: 5 ; doc10: 5 >
+<to    doc7: 7 ; doc8: 7 ; doc9: 6 ; doc10: 6 >
+<tread    doc7: 8 ; doc8: 8 ; doc9: 7 ; doc10: 7 >
+<where    doc7: 9 ; doc8: 9 ; doc9: 8 ; doc10: 8 >
+<worser    doc1: 7 ; doc3: 3 ; doc4: 5 ; doc5: 4 >
