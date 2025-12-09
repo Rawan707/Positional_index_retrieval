@@ -506,10 +506,10 @@ public class SearchEngineSpark implements Serializable {
             queryTermFreq.put(term, queryTermFreq.getOrDefault(term, 0) + 1);
         }
         
-        // Print query TF information
+        // Print query TF information (with normalized column)
         System.out.println("\nQuery TF Analysis:");
-        System.out.printf("%-15s%-12s%-15s%-12s%-12s%n", "Term", "Raw TF", "TF (1+log)", "IDF", "TF*IDF");
-        System.out.println("=" + "=".repeat(66));
+        System.out.printf("%-15s%-12s%-15s%-12s%-12s%-12s%n", "Term", "Raw TF", "TF (1+log)", "IDF", "TF*IDF", "Normalized");
+        System.out.println("=" + "=".repeat(78));
         
         Map<String, Double> queryTFIDF = new HashMap<>();
         double queryNorm = 0.0;
@@ -524,11 +524,25 @@ public class SearchEngineSpark implements Serializable {
             queryTFIDF.put(term, tfidf);
             queryNorm += tfidf * tfidf;
             
-            System.out.printf("%-15s%-12d%-15.4f%-12.4f%-12.4f%n", term, rawTF, tfWeight, idf, tfidf);
+            // We'll compute normalized value after computing full query norm; print placeholder for now
+            System.out.printf("%-15s%-12d%-15.4f%-12.4f%-12.4f", term, rawTF, tfWeight, idf, tfidf);
+            // normalized printed later once queryNorm is known (we'll compute and re-print below)
+            System.out.println();
         }
         
         queryNorm = Math.sqrt(queryNorm);
         System.out.printf("Query length (norm): %.4f%n", queryNorm);
+
+        // Print the normalized column by re-iterating the queryTFIDF entries in the same order
+        // (we'll print a small table showing term, tfidf, and normalized value)
+        System.out.println("\nQuery TF-IDF Normalized Values:");
+        System.out.printf("%-15s%-12s%-12s%n", "Term", "TF*IDF", "Normalized");
+        System.out.println("=" + "=".repeat(42));
+        for (String term : queryTermFreq.keySet()) {
+            double tfidf = queryTFIDF.getOrDefault(term, 0.0);
+            double normalizedVal = (queryNorm > 0.0) ? (tfidf / queryNorm) : 0.0;
+            System.out.printf("%-15s%-12.4f%-12.4f%n", term, tfidf, normalizedVal);
+        }
         
         // Normalize query tf-idf vector
         Map<String, Double> normalizedQuery = new HashMap<>();
@@ -538,25 +552,86 @@ public class SearchEngineSpark implements Serializable {
             }
         }
 
-        // Calculate cosine similarity (using normalized vectors)
+        // Build ordered list of matching doc IDs
+        List<Integer> matchedDocList = new ArrayList<>(matchingDocs);
+        Collections.sort(matchedDocList);
+
+        // Print combined table: term | rawTF | TF(1+log) | IDF | TF*IDF | normalized(query) | product per matched doc
+        System.out.println();
+        System.out.println("Query Results Table (per-term):");
+        // Header
+        System.out.printf("%-15s%-8s%-15s%-12s%-12s%-12s", "Term", "tf-raw", "tf(1+log)", "idf", "tf*idf", "normalized");
+        for (Integer dId : matchedDocList) {
+            System.out.printf("%-12s", "doc " + dId);
+        }
+        System.out.println();
+        // Divider
+        int baseWidth = 15 + 8 + 15 + 12 + 12 + 12 + (12 * matchedDocList.size());
+        System.out.println("-".repeat(Math.max(40, baseWidth)));
+
+        // To maintain query order, iterate over queryTerms (preserves input order)
+        Map<String, Double> queryTFWeight = new HashMap<>();
+        for (String term : queryTermFreq.keySet()) {
+            int rawTF = queryTermFreq.get(term);
+            double tfWeight = 1.0 + Math.log10(rawTF);
+            queryTFWeight.put(term, tfWeight);
+        }
+
+        // For computing sums per document
+        Map<Integer, Double> docSums = new HashMap<>();
+        for (String term : queryTerms) {
+            double tfidf = queryTFIDF.getOrDefault(term, 0.0);
+            double qNormed = normalizedQuery.getOrDefault(term, 0.0);
+
+            System.out.printf("%-15s", term);
+            int rawTF = queryTermFreq.getOrDefault(term, 0);
+            double tfWeight = queryTFWeight.getOrDefault(term, 0.0);
+            double idf = idfMap.getOrDefault(term, 0.0);
+            System.out.printf("%-8d%-15.4f%-12.4f%-12.4f%-12.4f", rawTF, tfWeight, idf, tfidf, qNormed);
+
+            for (Integer dId : matchedDocList) {
+                double docTermVal = 0.0;
+                Map<Integer, Double> termDocMap = normalizedTFIDF.get(term);
+                if (termDocMap != null && termDocMap.get(dId) != null) {
+                    docTermVal = termDocMap.get(dId);
+                }
+                double product = qNormed * docTermVal;
+                System.out.printf("%-12.4f", product);
+                docSums.put(dId, docSums.getOrDefault(dId, 0.0) + product);
+            }
+            System.out.println();
+        }
+
+        // Print sums row
+        System.out.println("-".repeat(Math.max(40, baseWidth)));
+        System.out.printf("%-15s%-8s%-15s%-12s%-12s%-12s", "sum", "", "", "", "", "");
+        for (Integer dId : matchedDocList) {
+            double s = docSums.getOrDefault(dId, 0.0);
+            System.out.printf("%-12.4f", s);
+        }
+        System.out.println();
+
+        // Print query length and similarities (same as sums since vectors are normalized)
+        System.out.println();
+        System.out.printf("Query length %.6f%n", queryNorm);
+
         List<DocumentScore> documentScores = new ArrayList<>();
-        System.out.println("\nSimilarity Computation (using normalized TF-IDF vectors):");
-        for (int docId : matchingDocs) {
-            double similarity = cosineSimilarityNormalized(normalizedQuery, docId);
-            documentScores.add(new DocumentScore(docId, similarity));
-            System.out.printf("Document %d similarity: %.6f%n", docId, similarity);
+        for (Integer dId : matchedDocList) {
+            double sim = docSums.getOrDefault(dId, 0.0);
+            documentScores.add(new DocumentScore(dId, sim));
         }
-        
-        // Sort by similarity (descending)
+
+        // Sort by similarity desc
         documentScores.sort((a, b) -> Double.compare(b.score, a.score));
-        
-        // Print ranked results
-        System.out.println("\nRanked Results:");
-        System.out.printf("%-8s%-12s%n", "Doc ID", "Score");
-        System.out.println("=" + "=".repeat(20));
+
+        System.out.println();
         for (DocumentScore ds : documentScores) {
-            System.out.printf("%-8d%-12.6f%n", ds.docId, ds.score);
+            System.out.printf("similarity (q , doc%d) %.6f%n", ds.docId, ds.score);
         }
+
+        System.out.print("returned docs ");
+        String joined = documentScores.stream().map(ds -> "d" + ds.docId).collect(Collectors.joining(","));
+        System.out.println(joined);
     }
     
     private Set<Integer> findMatchingDocuments(String query) {
