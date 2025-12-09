@@ -327,6 +327,30 @@ public class SearchEngineSpark implements Serializable {
             }
             System.out.println();
         }
+
+        // Append Weighted-TF table: w = tf * (1 + ln(tf)) using natural log
+        System.out.println();
+        System.out.println("Weighted TF Table (w = tf * (1 + ln(tf))) :");
+        System.out.printf("%-15s", "Term");
+        for (int i = 1; i <= totalDocuments; i++) {
+            System.out.printf("%-12s", "Doc" + i);
+        }
+        System.out.println();
+        System.out.println("=" + "=".repeat(15 + 12 * totalDocuments));
+
+        for (String term : sortedTerms) {
+            System.out.printf("%-15s", term);
+            Map<Integer, Double> docTFs = tfMatrix.get(term);
+            for (int i = 1; i <= totalDocuments; i++) {
+                Double tf = docTFs.get(i);
+                double w = 0.0;
+                if (tf != null && tf > 0.0) {
+                    w = tf * (1.0 + Math.log(tf));
+                }
+                System.out.printf("%-12.4f", w);
+            }
+            System.out.println();
+        }
     }
     
     public void computeIDF() {
@@ -610,6 +634,16 @@ public class SearchEngineSpark implements Serializable {
             System.out.printf("%-12.4f", s);
         }
         System.out.println();
+
+        // After the combined table, print a small weighted-TF table: w tf(1+ log tf)
+        System.out.println();
+        System.out.println("Weighted TF Table (w tf(1+ log tf)):");
+        System.out.printf("%-15s%-20s%n", "Term", "w tf(1+ log tf)");
+        System.out.println("=" + "=".repeat(35));
+        for (String term : queryTermFreq.keySet()) {
+            double tfWeight = queryTFWeight.getOrDefault(term, 0.0);
+            System.out.printf("%-15s%-20.4f%n", term, tfWeight);
+        }
 
         // Print query length and similarities (same as sums since vectors are normalized)
         System.out.println();
