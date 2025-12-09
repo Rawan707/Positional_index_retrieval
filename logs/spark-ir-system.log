@@ -1,0 +1,912 @@
+2025-12-09 11:39:10.772 [com.ir.spark.SearchEngineSpark.main()] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2025-12-09 11:39:38.302 [com.ir.spark.SearchEngineSpark.main()] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2025-12-09 11:40:21.842 [com.ir.spark.SearchEngineSpark.main()] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2025-12-09 11:44:48.329 [main] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2025-12-09 11:44:49.934 [main] INFO  org.sparkproject.jetty.util.log - Logging initialized @5020ms to org.sparkproject.jetty.util.log.Slf4jLog
+2025-12-09 11:44:50.091 [main] INFO  org.sparkproject.jetty.server.Server - jetty-9.4.52.v20230823; built: 2023-08-23T19:29:37.669Z; git: abdcda73818a1a2c705da276edb0bf6581e7997e; jvm 17.0.12+8-LTS-286
+2025-12-09 11:44:50.124 [main] INFO  org.sparkproject.jetty.server.Server - Started @5213ms
+2025-12-09 11:44:50.182 [main] WARN  org.apache.spark.util.Utils - Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+2025-12-09 11:44:50.206 [main] INFO  org.sparkproject.jetty.server.AbstractConnector - Started ServerConnector@32e54a9d{HTTP/1.1, (http/1.1)}{0.0.0.0:4041}
+2025-12-09 11:44:50.256 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@69fe0ed4{/,null,AVAILABLE,@Spark}
+2025-12-09 11:44:50.845 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Stopped o.s.j.s.ServletContextHandler@69fe0ed4{/,null,STOPPED,@Spark}
+2025-12-09 11:44:50.850 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3625a016{/jobs,null,AVAILABLE,@Spark}
+2025-12-09 11:44:50.853 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@609e57da{/jobs/json,null,AVAILABLE,@Spark}
+2025-12-09 11:44:50.859 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1f1cddf3{/jobs/job,null,AVAILABLE,@Spark}
+2025-12-09 11:44:50.861 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@75b6dd5b{/jobs/job/json,null,AVAILABLE,@Spark}
+2025-12-09 11:44:50.866 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@72b43104{/stages,null,AVAILABLE,@Spark}
+2025-12-09 11:44:50.868 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4d0e54e0{/stages/json,null,AVAILABLE,@Spark}
+2025-12-09 11:44:50.872 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@72eb6200{/stages/stage,null,AVAILABLE,@Spark}
+2025-12-09 11:44:50.874 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7affc159{/stages/stage/json,null,AVAILABLE,@Spark}
+2025-12-09 11:44:50.877 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3fd05b3e{/stages/pool,null,AVAILABLE,@Spark}
+2025-12-09 11:44:50.882 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4a481728{/stages/pool/json,null,AVAILABLE,@Spark}
+2025-12-09 11:44:50.888 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@77fa9381{/storage,null,AVAILABLE,@Spark}
+2025-12-09 11:44:50.890 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7cac93fe{/storage/json,null,AVAILABLE,@Spark}
+2025-12-09 11:44:50.892 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@64deb58f{/storage/rdd,null,AVAILABLE,@Spark}
+2025-12-09 11:44:50.895 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@33379242{/storage/rdd/json,null,AVAILABLE,@Spark}
+2025-12-09 11:44:50.899 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3f5156a6{/environment,null,AVAILABLE,@Spark}
+2025-12-09 11:44:50.908 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7d17ee50{/environment/json,null,AVAILABLE,@Spark}
+2025-12-09 11:44:50.911 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@712c5463{/executors,null,AVAILABLE,@Spark}
+2025-12-09 11:44:50.913 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2f14b0f6{/executors/json,null,AVAILABLE,@Spark}
+2025-12-09 11:44:50.916 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@16aed49f{/executors/threadDump,null,AVAILABLE,@Spark}
+2025-12-09 11:44:50.918 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6c479fdf{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2025-12-09 11:44:50.920 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@19b206ee{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2025-12-09 11:44:50.924 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5f1483fd{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2025-12-09 11:44:50.953 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6e03db1f{/static,null,AVAILABLE,@Spark}
+2025-12-09 11:44:50.956 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6d091cad{/,null,AVAILABLE,@Spark}
+2025-12-09 11:44:50.965 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3bb5ceb{/api,null,AVAILABLE,@Spark}
+2025-12-09 11:44:50.969 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5584d9c6{/jobs/job/kill,null,AVAILABLE,@Spark}
+2025-12-09 11:44:50.974 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6d0be7ab{/stages/stage/kill,null,AVAILABLE,@Spark}
+2025-12-09 11:44:50.989 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@63300c4b{/metrics/json,null,AVAILABLE,@Spark}
+2025-12-09 11:44:54.290 [main] INFO  org.sparkproject.jetty.server.AbstractConnector - Stopped Spark@32e54a9d{HTTP/1.1, (http/1.1)}{0.0.0.0:4041}
+2025-12-09 11:44:58.761 [main] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2025-12-09 11:45:00.302 [main] INFO  org.sparkproject.jetty.util.log - Logging initialized @4286ms to org.sparkproject.jetty.util.log.Slf4jLog
+2025-12-09 11:45:00.431 [main] INFO  org.sparkproject.jetty.server.Server - jetty-9.4.52.v20230823; built: 2023-08-23T19:29:37.669Z; git: abdcda73818a1a2c705da276edb0bf6581e7997e; jvm 17.0.12+8-LTS-286
+2025-12-09 11:45:00.455 [main] INFO  org.sparkproject.jetty.server.Server - Started @4440ms
+2025-12-09 11:45:00.497 [main] WARN  org.apache.spark.util.Utils - Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+2025-12-09 11:45:00.520 [main] INFO  org.sparkproject.jetty.server.AbstractConnector - Started ServerConnector@32e54a9d{HTTP/1.1, (http/1.1)}{0.0.0.0:4041}
+2025-12-09 11:45:00.558 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@69fe0ed4{/,null,AVAILABLE,@Spark}
+2025-12-09 11:45:01.104 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Stopped o.s.j.s.ServletContextHandler@69fe0ed4{/,null,STOPPED,@Spark}
+2025-12-09 11:45:01.112 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3625a016{/jobs,null,AVAILABLE,@Spark}
+2025-12-09 11:45:01.116 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@609e57da{/jobs/json,null,AVAILABLE,@Spark}
+2025-12-09 11:45:01.119 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1f1cddf3{/jobs/job,null,AVAILABLE,@Spark}
+2025-12-09 11:45:01.127 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@75b6dd5b{/jobs/job/json,null,AVAILABLE,@Spark}
+2025-12-09 11:45:01.134 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@72b43104{/stages,null,AVAILABLE,@Spark}
+2025-12-09 11:45:01.137 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4d0e54e0{/stages/json,null,AVAILABLE,@Spark}
+2025-12-09 11:45:01.144 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@72eb6200{/stages/stage,null,AVAILABLE,@Spark}
+2025-12-09 11:45:01.147 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7affc159{/stages/stage/json,null,AVAILABLE,@Spark}
+2025-12-09 11:45:01.150 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3fd05b3e{/stages/pool,null,AVAILABLE,@Spark}
+2025-12-09 11:45:01.152 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4a481728{/stages/pool/json,null,AVAILABLE,@Spark}
+2025-12-09 11:45:01.154 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@77fa9381{/storage,null,AVAILABLE,@Spark}
+2025-12-09 11:45:01.168 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7cac93fe{/storage/json,null,AVAILABLE,@Spark}
+2025-12-09 11:45:01.178 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@64deb58f{/storage/rdd,null,AVAILABLE,@Spark}
+2025-12-09 11:45:01.182 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@33379242{/storage/rdd/json,null,AVAILABLE,@Spark}
+2025-12-09 11:45:01.183 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3f5156a6{/environment,null,AVAILABLE,@Spark}
+2025-12-09 11:45:01.187 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7d17ee50{/environment/json,null,AVAILABLE,@Spark}
+2025-12-09 11:45:01.193 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@712c5463{/executors,null,AVAILABLE,@Spark}
+2025-12-09 11:45:01.197 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2f14b0f6{/executors/json,null,AVAILABLE,@Spark}
+2025-12-09 11:45:01.198 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@16aed49f{/executors/threadDump,null,AVAILABLE,@Spark}
+2025-12-09 11:45:01.201 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6c479fdf{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2025-12-09 11:45:01.202 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@19b206ee{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2025-12-09 11:45:01.215 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5f1483fd{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2025-12-09 11:45:01.237 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6e03db1f{/static,null,AVAILABLE,@Spark}
+2025-12-09 11:45:01.239 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6d091cad{/,null,AVAILABLE,@Spark}
+2025-12-09 11:45:01.244 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3bb5ceb{/api,null,AVAILABLE,@Spark}
+2025-12-09 11:45:01.247 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5584d9c6{/jobs/job/kill,null,AVAILABLE,@Spark}
+2025-12-09 11:45:01.249 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6d0be7ab{/stages/stage/kill,null,AVAILABLE,@Spark}
+2025-12-09 11:45:01.259 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@63300c4b{/metrics/json,null,AVAILABLE,@Spark}
+2025-12-09 11:45:04.811 [main] INFO  org.sparkproject.jetty.server.AbstractConnector - Stopped Spark@32e54a9d{HTTP/1.1, (http/1.1)}{0.0.0.0:4041}
+2025-12-09 11:52:09.521 [main] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2025-12-09 11:52:11.085 [main] INFO  org.sparkproject.jetty.util.log - Logging initialized @4001ms to org.sparkproject.jetty.util.log.Slf4jLog
+2025-12-09 11:52:11.217 [main] INFO  org.sparkproject.jetty.server.Server - jetty-9.4.52.v20230823; built: 2023-08-23T19:29:37.669Z; git: abdcda73818a1a2c705da276edb0bf6581e7997e; jvm 17.0.12+8-LTS-286
+2025-12-09 11:52:11.245 [main] INFO  org.sparkproject.jetty.server.Server - Started @4163ms
+2025-12-09 11:52:11.289 [main] WARN  org.apache.spark.util.Utils - Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+2025-12-09 11:52:11.309 [main] INFO  org.sparkproject.jetty.server.AbstractConnector - Started ServerConnector@32e54a9d{HTTP/1.1, (http/1.1)}{0.0.0.0:4041}
+2025-12-09 11:52:11.347 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@69fe0ed4{/,null,AVAILABLE,@Spark}
+2025-12-09 11:52:11.987 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Stopped o.s.j.s.ServletContextHandler@69fe0ed4{/,null,STOPPED,@Spark}
+2025-12-09 11:52:11.993 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3625a016{/jobs,null,AVAILABLE,@Spark}
+2025-12-09 11:52:11.995 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@609e57da{/jobs/json,null,AVAILABLE,@Spark}
+2025-12-09 11:52:11.998 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1f1cddf3{/jobs/job,null,AVAILABLE,@Spark}
+2025-12-09 11:52:11.999 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@75b6dd5b{/jobs/job/json,null,AVAILABLE,@Spark}
+2025-12-09 11:52:12.002 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@72b43104{/stages,null,AVAILABLE,@Spark}
+2025-12-09 11:52:12.007 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4d0e54e0{/stages/json,null,AVAILABLE,@Spark}
+2025-12-09 11:52:12.010 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@72eb6200{/stages/stage,null,AVAILABLE,@Spark}
+2025-12-09 11:52:12.012 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7affc159{/stages/stage/json,null,AVAILABLE,@Spark}
+2025-12-09 11:52:12.014 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3fd05b3e{/stages/pool,null,AVAILABLE,@Spark}
+2025-12-09 11:52:12.016 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4a481728{/stages/pool/json,null,AVAILABLE,@Spark}
+2025-12-09 11:52:12.027 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@77fa9381{/storage,null,AVAILABLE,@Spark}
+2025-12-09 11:52:12.030 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7cac93fe{/storage/json,null,AVAILABLE,@Spark}
+2025-12-09 11:52:12.032 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@64deb58f{/storage/rdd,null,AVAILABLE,@Spark}
+2025-12-09 11:52:12.036 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@33379242{/storage/rdd/json,null,AVAILABLE,@Spark}
+2025-12-09 11:52:12.040 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3f5156a6{/environment,null,AVAILABLE,@Spark}
+2025-12-09 11:52:12.042 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7d17ee50{/environment/json,null,AVAILABLE,@Spark}
+2025-12-09 11:52:12.048 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@712c5463{/executors,null,AVAILABLE,@Spark}
+2025-12-09 11:52:12.050 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2f14b0f6{/executors/json,null,AVAILABLE,@Spark}
+2025-12-09 11:52:12.056 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@16aed49f{/executors/threadDump,null,AVAILABLE,@Spark}
+2025-12-09 11:52:12.059 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6c479fdf{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2025-12-09 11:52:12.061 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@19b206ee{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2025-12-09 11:52:12.063 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5f1483fd{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2025-12-09 11:52:12.082 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6e03db1f{/static,null,AVAILABLE,@Spark}
+2025-12-09 11:52:12.085 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6d091cad{/,null,AVAILABLE,@Spark}
+2025-12-09 11:52:12.095 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3bb5ceb{/api,null,AVAILABLE,@Spark}
+2025-12-09 11:52:12.097 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5584d9c6{/jobs/job/kill,null,AVAILABLE,@Spark}
+2025-12-09 11:52:12.100 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6d0be7ab{/stages/stage/kill,null,AVAILABLE,@Spark}
+2025-12-09 11:52:12.116 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@63300c4b{/metrics/json,null,AVAILABLE,@Spark}
+2025-12-09 11:52:15.688 [main] INFO  org.sparkproject.jetty.server.AbstractConnector - Stopped Spark@32e54a9d{HTTP/1.1, (http/1.1)}{0.0.0.0:4041}
+2025-12-09 13:02:02.844 [main] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2025-12-09 13:02:04.040 [main] INFO  org.sparkproject.jetty.util.log - Logging initialized @3168ms to org.sparkproject.jetty.util.log.Slf4jLog
+2025-12-09 13:02:04.165 [main] INFO  org.sparkproject.jetty.server.Server - jetty-9.4.52.v20230823; built: 2023-08-23T19:29:37.669Z; git: abdcda73818a1a2c705da276edb0bf6581e7997e; jvm 17.0.12+8-LTS-286
+2025-12-09 13:02:04.207 [main] INFO  org.sparkproject.jetty.server.Server - Started @3336ms
+2025-12-09 13:02:04.247 [main] WARN  org.apache.spark.util.Utils - Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+2025-12-09 13:02:04.264 [main] INFO  org.sparkproject.jetty.server.AbstractConnector - Started ServerConnector@32e54a9d{HTTP/1.1, (http/1.1)}{0.0.0.0:4041}
+2025-12-09 13:02:04.299 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@69fe0ed4{/,null,AVAILABLE,@Spark}
+2025-12-09 13:02:04.786 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Stopped o.s.j.s.ServletContextHandler@69fe0ed4{/,null,STOPPED,@Spark}
+2025-12-09 13:02:04.788 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3625a016{/jobs,null,AVAILABLE,@Spark}
+2025-12-09 13:02:04.789 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@609e57da{/jobs/json,null,AVAILABLE,@Spark}
+2025-12-09 13:02:04.790 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1f1cddf3{/jobs/job,null,AVAILABLE,@Spark}
+2025-12-09 13:02:04.791 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@75b6dd5b{/jobs/job/json,null,AVAILABLE,@Spark}
+2025-12-09 13:02:04.792 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@72b43104{/stages,null,AVAILABLE,@Spark}
+2025-12-09 13:02:04.793 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4d0e54e0{/stages/json,null,AVAILABLE,@Spark}
+2025-12-09 13:02:04.794 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@72eb6200{/stages/stage,null,AVAILABLE,@Spark}
+2025-12-09 13:02:04.795 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7affc159{/stages/stage/json,null,AVAILABLE,@Spark}
+2025-12-09 13:02:04.796 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3fd05b3e{/stages/pool,null,AVAILABLE,@Spark}
+2025-12-09 13:02:04.797 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4a481728{/stages/pool/json,null,AVAILABLE,@Spark}
+2025-12-09 13:02:04.799 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@77fa9381{/storage,null,AVAILABLE,@Spark}
+2025-12-09 13:02:04.800 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7cac93fe{/storage/json,null,AVAILABLE,@Spark}
+2025-12-09 13:02:04.803 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@64deb58f{/storage/rdd,null,AVAILABLE,@Spark}
+2025-12-09 13:02:04.805 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@33379242{/storage/rdd/json,null,AVAILABLE,@Spark}
+2025-12-09 13:02:04.806 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3f5156a6{/environment,null,AVAILABLE,@Spark}
+2025-12-09 13:02:04.807 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7d17ee50{/environment/json,null,AVAILABLE,@Spark}
+2025-12-09 13:02:04.807 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@712c5463{/executors,null,AVAILABLE,@Spark}
+2025-12-09 13:02:04.808 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2f14b0f6{/executors/json,null,AVAILABLE,@Spark}
+2025-12-09 13:02:04.809 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@16aed49f{/executors/threadDump,null,AVAILABLE,@Spark}
+2025-12-09 13:02:04.811 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6c479fdf{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2025-12-09 13:02:04.812 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@19b206ee{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2025-12-09 13:02:04.813 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5f1483fd{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2025-12-09 13:02:04.838 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6e03db1f{/static,null,AVAILABLE,@Spark}
+2025-12-09 13:02:04.839 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6d091cad{/,null,AVAILABLE,@Spark}
+2025-12-09 13:02:04.844 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3bb5ceb{/api,null,AVAILABLE,@Spark}
+2025-12-09 13:02:04.845 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5584d9c6{/jobs/job/kill,null,AVAILABLE,@Spark}
+2025-12-09 13:02:04.846 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6d0be7ab{/stages/stage/kill,null,AVAILABLE,@Spark}
+2025-12-09 13:02:04.860 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@63300c4b{/metrics/json,null,AVAILABLE,@Spark}
+2025-12-09 13:02:06.932 [main] INFO  org.sparkproject.jetty.server.AbstractConnector - Stopped Spark@32e54a9d{HTTP/1.1, (http/1.1)}{0.0.0.0:4041}
+2025-12-09 13:05:17.867 [main] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2025-12-09 13:05:18.876 [main] INFO  org.sparkproject.jetty.util.log - Logging initialized @2610ms to org.sparkproject.jetty.util.log.Slf4jLog
+2025-12-09 13:05:18.977 [main] INFO  org.sparkproject.jetty.server.Server - jetty-9.4.52.v20230823; built: 2023-08-23T19:29:37.669Z; git: abdcda73818a1a2c705da276edb0bf6581e7997e; jvm 17.0.12+8-LTS-286
+2025-12-09 13:05:18.995 [main] INFO  org.sparkproject.jetty.server.Server - Started @2732ms
+2025-12-09 13:05:19.029 [main] WARN  org.apache.spark.util.Utils - Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+2025-12-09 13:05:19.042 [main] INFO  org.sparkproject.jetty.server.AbstractConnector - Started ServerConnector@7704baf1{HTTP/1.1, (http/1.1)}{0.0.0.0:4041}
+2025-12-09 13:05:19.070 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4e1a46fb{/,null,AVAILABLE,@Spark}
+2025-12-09 13:05:19.454 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Stopped o.s.j.s.ServletContextHandler@4e1a46fb{/,null,STOPPED,@Spark}
+2025-12-09 13:05:19.456 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4364863{/jobs,null,AVAILABLE,@Spark}
+2025-12-09 13:05:19.457 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@267cde2e{/jobs/json,null,AVAILABLE,@Spark}
+2025-12-09 13:05:19.459 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@d2e6b0b{/jobs/job,null,AVAILABLE,@Spark}
+2025-12-09 13:05:19.460 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@228bda54{/jobs/job/json,null,AVAILABLE,@Spark}
+2025-12-09 13:05:19.462 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@b3e86d5{/stages,null,AVAILABLE,@Spark}
+2025-12-09 13:05:19.464 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@e111c7c{/stages/json,null,AVAILABLE,@Spark}
+2025-12-09 13:05:19.468 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@21a9a705{/stages/stage,null,AVAILABLE,@Spark}
+2025-12-09 13:05:19.469 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@76ececd{/stages/stage/json,null,AVAILABLE,@Spark}
+2025-12-09 13:05:19.470 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1682c08c{/stages/pool,null,AVAILABLE,@Spark}
+2025-12-09 13:05:19.471 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4eb9f2af{/stages/pool/json,null,AVAILABLE,@Spark}
+2025-12-09 13:05:19.472 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4ace284d{/storage,null,AVAILABLE,@Spark}
+2025-12-09 13:05:19.477 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@76d72b5b{/storage/json,null,AVAILABLE,@Spark}
+2025-12-09 13:05:19.480 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@479b5066{/storage/rdd,null,AVAILABLE,@Spark}
+2025-12-09 13:05:19.481 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2b1cd7bc{/storage/rdd/json,null,AVAILABLE,@Spark}
+2025-12-09 13:05:19.483 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2e32fc22{/environment,null,AVAILABLE,@Spark}
+2025-12-09 13:05:19.484 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@72bdd7c7{/environment/json,null,AVAILABLE,@Spark}
+2025-12-09 13:05:19.485 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@44fdce3c{/executors,null,AVAILABLE,@Spark}
+2025-12-09 13:05:19.486 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6d33a66e{/executors/json,null,AVAILABLE,@Spark}
+2025-12-09 13:05:19.487 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5b20706{/executors/threadDump,null,AVAILABLE,@Spark}
+2025-12-09 13:05:19.488 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@66de00f2{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2025-12-09 13:05:19.492 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@79d82f66{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2025-12-09 13:05:19.494 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@ffd4cba{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2025-12-09 13:05:19.514 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@670f2466{/static,null,AVAILABLE,@Spark}
+2025-12-09 13:05:19.515 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7b3cde6f{/,null,AVAILABLE,@Spark}
+2025-12-09 13:05:19.518 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7c663eaf{/api,null,AVAILABLE,@Spark}
+2025-12-09 13:05:19.519 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6a9344f5{/jobs/job/kill,null,AVAILABLE,@Spark}
+2025-12-09 13:05:19.520 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3c9c6245{/stages/stage/kill,null,AVAILABLE,@Spark}
+2025-12-09 13:05:19.531 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1668919e{/metrics/json,null,AVAILABLE,@Spark}
+2025-12-09 13:20:18.481 [main] INFO  org.sparkproject.jetty.server.AbstractConnector - Stopped Spark@7704baf1{HTTP/1.1, (http/1.1)}{0.0.0.0:4041}
+2025-12-09 13:20:18.588 [main] ERROR org.apache.spark.storage.DiskBlockManager - Exception while deleting local spark dir: C:\Users\Rouna\AppData\Local\Temp\blockmgr-91a8ac1a-f44c-4cec-8a58-d102d941524f
+java.io.IOException: Failed to list files for dir: C:\Users\Rouna\AppData\Local\Temp\blockmgr-91a8ac1a-f44c-4cec-8a58-d102d941524f\35
+	at org.apache.spark.network.util.JavaUtils.listFilesSafely(JavaUtils.java:181) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:142) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:117) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:129) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:117) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:90) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively(SparkFileUtils.scala:121) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively$(SparkFileUtils.scala:120) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1126) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.storage.DiskBlockManager.$anonfun$doStop$1(DiskBlockManager.scala:368) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.storage.DiskBlockManager.$anonfun$doStop$1$adapted(DiskBlockManager.scala:364) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36) ~[scala-library-2.12.18.jar:?]
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33) ~[scala-library-2.12.18.jar:?]
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198) ~[scala-library-2.12.18.jar:?]
+	at org.apache.spark.storage.DiskBlockManager.doStop(DiskBlockManager.scala:364) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.storage.DiskBlockManager.stop(DiskBlockManager.scala:359) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.storage.BlockManager.stop(BlockManager.scala:2124) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.SparkEnv.stop(SparkEnv.scala:95) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.SparkContext.$anonfun$stop$25(SparkContext.scala:2310) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1375) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:2310) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:2216) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.api.java.JavaSparkContext.stop(JavaSparkContext.scala:550) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at com.ir.spark.SearchEngineSpark.shutdown(SearchEngineSpark.java:756) [classes/:?]
+	at com.ir.spark.SearchEngineSpark.main(SearchEngineSpark.java:803) [classes/:?]
+2025-12-09 13:20:18.588 [shutdown-hook-0] ERROR org.apache.spark.storage.DiskBlockManager - Exception while deleting local spark dir: C:\Users\Rouna\AppData\Local\Temp\blockmgr-91a8ac1a-f44c-4cec-8a58-d102d941524f
+java.io.IOException: Failed to list files for dir: C:\Users\Rouna\AppData\Local\Temp\blockmgr-91a8ac1a-f44c-4cec-8a58-d102d941524f\27
+	at org.apache.spark.network.util.JavaUtils.listFilesSafely(JavaUtils.java:181) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:142) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:117) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:129) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:117) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:90) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively(SparkFileUtils.scala:121) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively$(SparkFileUtils.scala:120) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1126) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.storage.DiskBlockManager.$anonfun$doStop$1(DiskBlockManager.scala:368) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.storage.DiskBlockManager.$anonfun$doStop$1$adapted(DiskBlockManager.scala:364) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36) ~[scala-library-2.12.18.jar:?]
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33) ~[scala-library-2.12.18.jar:?]
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198) ~[scala-library-2.12.18.jar:?]
+	at org.apache.spark.storage.DiskBlockManager.doStop(DiskBlockManager.scala:364) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.storage.DiskBlockManager.$anonfun$addShutdownHook$2(DiskBlockManager.scala:346) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:214) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$2(ShutdownHookManager.scala:188) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23) ~[scala-library-2.12.18.jar:?]
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1928) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$1(ShutdownHookManager.scala:188) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23) [scala-library-2.12.18.jar:?]
+	at scala.util.Try$.apply(Try.scala:213) [scala-library-2.12.18.jar:?]
+	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:188) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:178) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:842) [?:?]
+2025-12-09 13:20:18.607 [shutdown-hook-0] ERROR org.apache.spark.util.ShutdownHookManager - Exception while deleting Spark temp dir: C:\Users\Rouna\AppData\Local\Temp\spark-9a9991ee-a6f6-43d6-8d87-fc6f7057c77d\userFiles-96df869f-ceb1-47dd-88e5-655a1c371ae4
+java.nio.file.NoSuchFileException: C:\Users\Rouna\AppData\Local\Temp\spark-9a9991ee-a6f6-43d6-8d87-fc6f7057c77d\userFiles-96df869f-ceb1-47dd-88e5-655a1c371ae4
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[?:?]
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53) ~[?:?]
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:199) ~[?:?]
+	at java.nio.file.Files.readAttributes(Files.java:1851) ~[?:?]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:124) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:117) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:90) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively(SparkFileUtils.scala:121) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively$(SparkFileUtils.scala:120) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1126) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4(ShutdownHookManager.scala:65) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4$adapted(ShutdownHookManager.scala:62) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36) ~[scala-library-2.12.18.jar:?]
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33) ~[scala-library-2.12.18.jar:?]
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198) ~[scala-library-2.12.18.jar:?]
+	at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$2(ShutdownHookManager.scala:62) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:214) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$2(ShutdownHookManager.scala:188) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23) ~[scala-library-2.12.18.jar:?]
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1928) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$1(ShutdownHookManager.scala:188) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23) [scala-library-2.12.18.jar:?]
+	at scala.util.Try$.apply(Try.scala:213) [scala-library-2.12.18.jar:?]
+	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:188) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:178) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:842) [?:?]
+2025-12-09 13:20:18.611 [main] WARN  org.apache.spark.SparkEnv - Exception while deleting Spark temp dir: C:\Users\Rouna\AppData\Local\Temp\spark-9a9991ee-a6f6-43d6-8d87-fc6f7057c77d\userFiles-96df869f-ceb1-47dd-88e5-655a1c371ae4
+java.nio.file.NoSuchFileException: C:\Users\Rouna\AppData\Local\Temp\spark-9a9991ee-a6f6-43d6-8d87-fc6f7057c77d\userFiles-96df869f-ceb1-47dd-88e5-655a1c371ae4
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[?:?]
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53) ~[?:?]
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:199) ~[?:?]
+	at java.nio.file.Files.readAttributes(Files.java:1851) ~[?:?]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:124) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:117) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:90) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively(SparkFileUtils.scala:121) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively$(SparkFileUtils.scala:120) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1126) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.SparkEnv.stop(SparkEnv.scala:108) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.SparkContext.$anonfun$stop$25(SparkContext.scala:2310) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1375) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:2310) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:2216) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.api.java.JavaSparkContext.stop(JavaSparkContext.scala:550) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at com.ir.spark.SearchEngineSpark.shutdown(SearchEngineSpark.java:756) [classes/:?]
+	at com.ir.spark.SearchEngineSpark.main(SearchEngineSpark.java:803) [classes/:?]
+2025-12-09 13:26:53.819 [main] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2025-12-09 13:26:54.918 [main] INFO  org.sparkproject.jetty.util.log - Logging initialized @3100ms to org.sparkproject.jetty.util.log.Slf4jLog
+2025-12-09 13:26:55.037 [main] INFO  org.sparkproject.jetty.server.Server - jetty-9.4.52.v20230823; built: 2023-08-23T19:29:37.669Z; git: abdcda73818a1a2c705da276edb0bf6581e7997e; jvm 17.0.12+8-LTS-286
+2025-12-09 13:26:55.055 [main] INFO  org.sparkproject.jetty.server.Server - Started @3239ms
+2025-12-09 13:26:55.098 [main] WARN  org.apache.spark.util.Utils - Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+2025-12-09 13:26:55.115 [main] INFO  org.sparkproject.jetty.server.AbstractConnector - Started ServerConnector@7100dea{HTTP/1.1, (http/1.1)}{0.0.0.0:4041}
+2025-12-09 13:26:55.149 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@119aa36{/,null,AVAILABLE,@Spark}
+2025-12-09 13:26:55.584 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Stopped o.s.j.s.ServletContextHandler@119aa36{/,null,STOPPED,@Spark}
+2025-12-09 13:26:55.586 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7e83992{/jobs,null,AVAILABLE,@Spark}
+2025-12-09 13:26:55.587 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3625a016{/jobs/json,null,AVAILABLE,@Spark}
+2025-12-09 13:26:55.589 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4d634127{/jobs/job,null,AVAILABLE,@Spark}
+2025-12-09 13:26:55.589 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1f1cddf3{/jobs/job/json,null,AVAILABLE,@Spark}
+2025-12-09 13:26:55.591 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@75b6dd5b{/stages,null,AVAILABLE,@Spark}
+2025-12-09 13:26:55.592 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@72b43104{/stages/json,null,AVAILABLE,@Spark}
+2025-12-09 13:26:55.594 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@58f4b31a{/stages/stage,null,AVAILABLE,@Spark}
+2025-12-09 13:26:55.595 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@72eb6200{/stages/stage/json,null,AVAILABLE,@Spark}
+2025-12-09 13:26:55.597 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7affc159{/stages/pool,null,AVAILABLE,@Spark}
+2025-12-09 13:26:55.598 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3fd05b3e{/stages/pool/json,null,AVAILABLE,@Spark}
+2025-12-09 13:26:55.599 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4a481728{/storage,null,AVAILABLE,@Spark}
+2025-12-09 13:26:55.600 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@77fa9381{/storage/json,null,AVAILABLE,@Spark}
+2025-12-09 13:26:55.601 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7cac93fe{/storage/rdd,null,AVAILABLE,@Spark}
+2025-12-09 13:26:55.602 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@64deb58f{/storage/rdd/json,null,AVAILABLE,@Spark}
+2025-12-09 13:26:55.603 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@33379242{/environment,null,AVAILABLE,@Spark}
+2025-12-09 13:26:55.605 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3f5156a6{/environment/json,null,AVAILABLE,@Spark}
+2025-12-09 13:26:55.605 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7d17ee50{/executors,null,AVAILABLE,@Spark}
+2025-12-09 13:26:55.608 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@712c5463{/executors/json,null,AVAILABLE,@Spark}
+2025-12-09 13:26:55.610 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2f14b0f6{/executors/threadDump,null,AVAILABLE,@Spark}
+2025-12-09 13:26:55.612 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@16aed49f{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2025-12-09 13:26:55.614 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6c479fdf{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2025-12-09 13:26:55.615 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@19b206ee{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2025-12-09 13:26:55.636 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5f1483fd{/static,null,AVAILABLE,@Spark}
+2025-12-09 13:26:55.639 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2c9a6717{/,null,AVAILABLE,@Spark}
+2025-12-09 13:26:55.644 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6d091cad{/api,null,AVAILABLE,@Spark}
+2025-12-09 13:26:55.646 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4da39ca9{/jobs/job/kill,null,AVAILABLE,@Spark}
+2025-12-09 13:26:55.647 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5584d9c6{/stages/stage/kill,null,AVAILABLE,@Spark}
+2025-12-09 13:26:55.665 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2577a95d{/metrics/json,null,AVAILABLE,@Spark}
+2025-12-09 13:26:57.411 [main] INFO  org.sparkproject.jetty.server.AbstractConnector - Stopped Spark@7100dea{HTTP/1.1, (http/1.1)}{0.0.0.0:4041}
+2025-12-09 13:29:06.717 [main] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2025-12-09 13:29:07.640 [main] INFO  org.sparkproject.jetty.util.log - Logging initialized @2550ms to org.sparkproject.jetty.util.log.Slf4jLog
+2025-12-09 13:29:07.736 [main] INFO  org.sparkproject.jetty.server.Server - jetty-9.4.52.v20230823; built: 2023-08-23T19:29:37.669Z; git: abdcda73818a1a2c705da276edb0bf6581e7997e; jvm 17.0.12+8-LTS-286
+2025-12-09 13:29:07.754 [main] INFO  org.sparkproject.jetty.server.Server - Started @2665ms
+2025-12-09 13:29:07.786 [main] WARN  org.apache.spark.util.Utils - Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+2025-12-09 13:29:07.802 [main] INFO  org.sparkproject.jetty.server.AbstractConnector - Started ServerConnector@32e54a9d{HTTP/1.1, (http/1.1)}{0.0.0.0:4041}
+2025-12-09 13:29:07.831 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@69fe0ed4{/,null,AVAILABLE,@Spark}
+2025-12-09 13:29:08.168 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Stopped o.s.j.s.ServletContextHandler@69fe0ed4{/,null,STOPPED,@Spark}
+2025-12-09 13:29:08.170 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3625a016{/jobs,null,AVAILABLE,@Spark}
+2025-12-09 13:29:08.171 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@609e57da{/jobs/json,null,AVAILABLE,@Spark}
+2025-12-09 13:29:08.173 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1f1cddf3{/jobs/job,null,AVAILABLE,@Spark}
+2025-12-09 13:29:08.174 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@75b6dd5b{/jobs/job/json,null,AVAILABLE,@Spark}
+2025-12-09 13:29:08.175 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@72b43104{/stages,null,AVAILABLE,@Spark}
+2025-12-09 13:29:08.176 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4d0e54e0{/stages/json,null,AVAILABLE,@Spark}
+2025-12-09 13:29:08.178 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@72eb6200{/stages/stage,null,AVAILABLE,@Spark}
+2025-12-09 13:29:08.180 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7affc159{/stages/stage/json,null,AVAILABLE,@Spark}
+2025-12-09 13:29:08.182 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3fd05b3e{/stages/pool,null,AVAILABLE,@Spark}
+2025-12-09 13:29:08.184 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4a481728{/stages/pool/json,null,AVAILABLE,@Spark}
+2025-12-09 13:29:08.186 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@77fa9381{/storage,null,AVAILABLE,@Spark}
+2025-12-09 13:29:08.187 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7cac93fe{/storage/json,null,AVAILABLE,@Spark}
+2025-12-09 13:29:08.188 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@64deb58f{/storage/rdd,null,AVAILABLE,@Spark}
+2025-12-09 13:29:08.189 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@33379242{/storage/rdd/json,null,AVAILABLE,@Spark}
+2025-12-09 13:29:08.190 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3f5156a6{/environment,null,AVAILABLE,@Spark}
+2025-12-09 13:29:08.191 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7d17ee50{/environment/json,null,AVAILABLE,@Spark}
+2025-12-09 13:29:08.193 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@712c5463{/executors,null,AVAILABLE,@Spark}
+2025-12-09 13:29:08.194 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2f14b0f6{/executors/json,null,AVAILABLE,@Spark}
+2025-12-09 13:29:08.195 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@16aed49f{/executors/threadDump,null,AVAILABLE,@Spark}
+2025-12-09 13:29:08.196 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6c479fdf{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2025-12-09 13:29:08.198 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@19b206ee{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2025-12-09 13:29:08.201 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5f1483fd{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2025-12-09 13:29:08.221 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6e03db1f{/static,null,AVAILABLE,@Spark}
+2025-12-09 13:29:08.222 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6d091cad{/,null,AVAILABLE,@Spark}
+2025-12-09 13:29:08.226 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3bb5ceb{/api,null,AVAILABLE,@Spark}
+2025-12-09 13:29:08.227 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5584d9c6{/jobs/job/kill,null,AVAILABLE,@Spark}
+2025-12-09 13:29:08.229 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6d0be7ab{/stages/stage/kill,null,AVAILABLE,@Spark}
+2025-12-09 13:29:08.241 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@63300c4b{/metrics/json,null,AVAILABLE,@Spark}
+2025-12-09 13:53:05.851 [main] INFO  org.sparkproject.jetty.server.AbstractConnector - Stopped Spark@32e54a9d{HTTP/1.1, (http/1.1)}{0.0.0.0:4041}
+2025-12-09 13:53:05.966 [main] ERROR org.apache.spark.storage.DiskBlockManager - Exception while deleting local spark dir: C:\Users\Rouna\AppData\Local\Temp\blockmgr-2e949c70-bab0-4aa4-b17d-437bac1865fd
+java.io.IOException: Failed to list files for dir: C:\Users\Rouna\AppData\Local\Temp\blockmgr-2e949c70-bab0-4aa4-b17d-437bac1865fd\28
+	at org.apache.spark.network.util.JavaUtils.listFilesSafely(JavaUtils.java:181) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:127) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:117) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:129) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:117) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:90) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively(SparkFileUtils.scala:121) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively$(SparkFileUtils.scala:120) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1126) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.storage.DiskBlockManager.$anonfun$doStop$1(DiskBlockManager.scala:368) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.storage.DiskBlockManager.$anonfun$doStop$1$adapted(DiskBlockManager.scala:364) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36) ~[scala-library-2.12.18.jar:?]
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33) ~[scala-library-2.12.18.jar:?]
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198) ~[scala-library-2.12.18.jar:?]
+	at org.apache.spark.storage.DiskBlockManager.doStop(DiskBlockManager.scala:364) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.storage.DiskBlockManager.stop(DiskBlockManager.scala:359) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.storage.BlockManager.stop(BlockManager.scala:2124) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.SparkEnv.stop(SparkEnv.scala:95) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.SparkContext.$anonfun$stop$25(SparkContext.scala:2310) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1375) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:2310) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:2216) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.api.java.JavaSparkContext.stop(JavaSparkContext.scala:550) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at com.ir.spark.SearchEngineSpark.shutdown(SearchEngineSpark.java:757) [classes/:?]
+	at com.ir.spark.SearchEngineSpark.main(SearchEngineSpark.java:804) [classes/:?]
+2025-12-09 13:53:05.970 [shutdown-hook-0] ERROR org.apache.spark.util.ShutdownHookManager - Exception while deleting Spark temp dir: C:\Users\Rouna\AppData\Local\Temp\spark-a70105a3-9642-498c-89da-8524b8576b0d\userFiles-db919a26-107f-4add-ac73-0292d454af58
+java.nio.file.NoSuchFileException: C:\Users\Rouna\AppData\Local\Temp\spark-a70105a3-9642-498c-89da-8524b8576b0d\userFiles-db919a26-107f-4add-ac73-0292d454af58
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[?:?]
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53) ~[?:?]
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:199) ~[?:?]
+	at java.nio.file.Files.readAttributes(Files.java:1851) ~[?:?]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:124) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:117) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:90) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively(SparkFileUtils.scala:121) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively$(SparkFileUtils.scala:120) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1126) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4(ShutdownHookManager.scala:65) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4$adapted(ShutdownHookManager.scala:62) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36) ~[scala-library-2.12.18.jar:?]
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33) ~[scala-library-2.12.18.jar:?]
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198) ~[scala-library-2.12.18.jar:?]
+	at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$2(ShutdownHookManager.scala:62) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:214) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$2(ShutdownHookManager.scala:188) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23) ~[scala-library-2.12.18.jar:?]
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1928) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$1(ShutdownHookManager.scala:188) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23) [scala-library-2.12.18.jar:?]
+	at scala.util.Try$.apply(Try.scala:213) [scala-library-2.12.18.jar:?]
+	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:188) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:178) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:842) [?:?]
+2025-12-09 13:54:14.338 [main] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2025-12-09 13:54:15.376 [main] INFO  org.sparkproject.jetty.util.log - Logging initialized @2662ms to org.sparkproject.jetty.util.log.Slf4jLog
+2025-12-09 13:54:15.482 [main] INFO  org.sparkproject.jetty.server.Server - jetty-9.4.52.v20230823; built: 2023-08-23T19:29:37.669Z; git: abdcda73818a1a2c705da276edb0bf6581e7997e; jvm 17.0.12+8-LTS-286
+2025-12-09 13:54:15.502 [main] INFO  org.sparkproject.jetty.server.Server - Started @2791ms
+2025-12-09 13:54:15.536 [main] WARN  org.apache.spark.util.Utils - Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+2025-12-09 13:54:15.551 [main] INFO  org.sparkproject.jetty.server.AbstractConnector - Started ServerConnector@32e54a9d{HTTP/1.1, (http/1.1)}{0.0.0.0:4041}
+2025-12-09 13:54:15.578 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@69fe0ed4{/,null,AVAILABLE,@Spark}
+2025-12-09 13:54:15.981 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Stopped o.s.j.s.ServletContextHandler@69fe0ed4{/,null,STOPPED,@Spark}
+2025-12-09 13:54:15.984 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3625a016{/jobs,null,AVAILABLE,@Spark}
+2025-12-09 13:54:15.985 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@609e57da{/jobs/json,null,AVAILABLE,@Spark}
+2025-12-09 13:54:15.987 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1f1cddf3{/jobs/job,null,AVAILABLE,@Spark}
+2025-12-09 13:54:15.988 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@75b6dd5b{/jobs/job/json,null,AVAILABLE,@Spark}
+2025-12-09 13:54:15.990 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@72b43104{/stages,null,AVAILABLE,@Spark}
+2025-12-09 13:54:15.994 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4d0e54e0{/stages/json,null,AVAILABLE,@Spark}
+2025-12-09 13:54:15.997 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@72eb6200{/stages/stage,null,AVAILABLE,@Spark}
+2025-12-09 13:54:15.998 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7affc159{/stages/stage/json,null,AVAILABLE,@Spark}
+2025-12-09 13:54:16.000 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3fd05b3e{/stages/pool,null,AVAILABLE,@Spark}
+2025-12-09 13:54:16.001 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4a481728{/stages/pool/json,null,AVAILABLE,@Spark}
+2025-12-09 13:54:16.003 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@77fa9381{/storage,null,AVAILABLE,@Spark}
+2025-12-09 13:54:16.005 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7cac93fe{/storage/json,null,AVAILABLE,@Spark}
+2025-12-09 13:54:16.006 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@64deb58f{/storage/rdd,null,AVAILABLE,@Spark}
+2025-12-09 13:54:16.011 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@33379242{/storage/rdd/json,null,AVAILABLE,@Spark}
+2025-12-09 13:54:16.015 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3f5156a6{/environment,null,AVAILABLE,@Spark}
+2025-12-09 13:54:16.016 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7d17ee50{/environment/json,null,AVAILABLE,@Spark}
+2025-12-09 13:54:16.018 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@712c5463{/executors,null,AVAILABLE,@Spark}
+2025-12-09 13:54:16.021 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2f14b0f6{/executors/json,null,AVAILABLE,@Spark}
+2025-12-09 13:54:16.023 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@16aed49f{/executors/threadDump,null,AVAILABLE,@Spark}
+2025-12-09 13:54:16.029 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6c479fdf{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2025-12-09 13:54:16.031 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@19b206ee{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2025-12-09 13:54:16.033 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5f1483fd{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2025-12-09 13:54:16.048 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6e03db1f{/static,null,AVAILABLE,@Spark}
+2025-12-09 13:54:16.049 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6d091cad{/,null,AVAILABLE,@Spark}
+2025-12-09 13:54:16.052 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3bb5ceb{/api,null,AVAILABLE,@Spark}
+2025-12-09 13:54:16.053 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5584d9c6{/jobs/job/kill,null,AVAILABLE,@Spark}
+2025-12-09 13:54:16.054 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6d0be7ab{/stages/stage/kill,null,AVAILABLE,@Spark}
+2025-12-09 13:54:16.064 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@63300c4b{/metrics/json,null,AVAILABLE,@Spark}
+2025-12-09 13:54:17.924 [main] INFO  org.sparkproject.jetty.server.AbstractConnector - Stopped Spark@32e54a9d{HTTP/1.1, (http/1.1)}{0.0.0.0:4041}
+2025-12-09 13:58:56.314 [main] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2025-12-09 13:58:57.259 [main] INFO  org.sparkproject.jetty.util.log - Logging initialized @2599ms to org.sparkproject.jetty.util.log.Slf4jLog
+2025-12-09 13:58:57.366 [main] INFO  org.sparkproject.jetty.server.Server - jetty-9.4.52.v20230823; built: 2023-08-23T19:29:37.669Z; git: abdcda73818a1a2c705da276edb0bf6581e7997e; jvm 17.0.12+8-LTS-286
+2025-12-09 13:58:57.383 [main] INFO  org.sparkproject.jetty.server.Server - Started @2724ms
+2025-12-09 13:58:57.419 [main] WARN  org.apache.spark.util.Utils - Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+2025-12-09 13:58:57.434 [main] INFO  org.sparkproject.jetty.server.AbstractConnector - Started ServerConnector@32e54a9d{HTTP/1.1, (http/1.1)}{0.0.0.0:4041}
+2025-12-09 13:58:57.461 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@69fe0ed4{/,null,AVAILABLE,@Spark}
+2025-12-09 13:58:57.803 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Stopped o.s.j.s.ServletContextHandler@69fe0ed4{/,null,STOPPED,@Spark}
+2025-12-09 13:58:57.805 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3625a016{/jobs,null,AVAILABLE,@Spark}
+2025-12-09 13:58:57.806 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@609e57da{/jobs/json,null,AVAILABLE,@Spark}
+2025-12-09 13:58:57.808 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1f1cddf3{/jobs/job,null,AVAILABLE,@Spark}
+2025-12-09 13:58:57.809 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@75b6dd5b{/jobs/job/json,null,AVAILABLE,@Spark}
+2025-12-09 13:58:57.811 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@72b43104{/stages,null,AVAILABLE,@Spark}
+2025-12-09 13:58:57.813 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4d0e54e0{/stages/json,null,AVAILABLE,@Spark}
+2025-12-09 13:58:57.818 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@72eb6200{/stages/stage,null,AVAILABLE,@Spark}
+2025-12-09 13:58:57.820 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7affc159{/stages/stage/json,null,AVAILABLE,@Spark}
+2025-12-09 13:58:57.821 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3fd05b3e{/stages/pool,null,AVAILABLE,@Spark}
+2025-12-09 13:58:57.822 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4a481728{/stages/pool/json,null,AVAILABLE,@Spark}
+2025-12-09 13:58:57.823 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@77fa9381{/storage,null,AVAILABLE,@Spark}
+2025-12-09 13:58:57.824 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7cac93fe{/storage/json,null,AVAILABLE,@Spark}
+2025-12-09 13:58:57.825 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@64deb58f{/storage/rdd,null,AVAILABLE,@Spark}
+2025-12-09 13:58:57.828 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@33379242{/storage/rdd/json,null,AVAILABLE,@Spark}
+2025-12-09 13:58:57.831 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3f5156a6{/environment,null,AVAILABLE,@Spark}
+2025-12-09 13:58:57.832 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7d17ee50{/environment/json,null,AVAILABLE,@Spark}
+2025-12-09 13:58:57.833 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@712c5463{/executors,null,AVAILABLE,@Spark}
+2025-12-09 13:58:57.835 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2f14b0f6{/executors/json,null,AVAILABLE,@Spark}
+2025-12-09 13:58:57.836 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@16aed49f{/executors/threadDump,null,AVAILABLE,@Spark}
+2025-12-09 13:58:57.837 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6c479fdf{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2025-12-09 13:58:57.839 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@19b206ee{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2025-12-09 13:58:57.840 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5f1483fd{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2025-12-09 13:58:57.868 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6e03db1f{/static,null,AVAILABLE,@Spark}
+2025-12-09 13:58:57.869 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6d091cad{/,null,AVAILABLE,@Spark}
+2025-12-09 13:58:57.874 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3bb5ceb{/api,null,AVAILABLE,@Spark}
+2025-12-09 13:58:57.876 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5584d9c6{/jobs/job/kill,null,AVAILABLE,@Spark}
+2025-12-09 13:58:57.879 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6d0be7ab{/stages/stage/kill,null,AVAILABLE,@Spark}
+2025-12-09 13:58:57.898 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@63300c4b{/metrics/json,null,AVAILABLE,@Spark}
+2025-12-09 14:04:13.889 [main] INFO  org.sparkproject.jetty.server.AbstractConnector - Stopped Spark@32e54a9d{HTTP/1.1, (http/1.1)}{0.0.0.0:4041}
+2025-12-09 14:04:13.999 [shutdown-hook-0] ERROR org.apache.spark.util.ShutdownHookManager - Exception while deleting Spark temp dir: C:\Users\Rouna\AppData\Local\Temp\spark-dd0d653f-f445-407e-901e-3a6852a8d65b\userFiles-fb671553-f4ca-4f42-ad12-7e43d89725dd
+java.nio.file.NoSuchFileException: C:\Users\Rouna\AppData\Local\Temp\spark-dd0d653f-f445-407e-901e-3a6852a8d65b\userFiles-fb671553-f4ca-4f42-ad12-7e43d89725dd
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[?:?]
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53) ~[?:?]
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:199) ~[?:?]
+	at java.nio.file.Files.readAttributes(Files.java:1851) ~[?:?]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:124) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:117) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:90) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively(SparkFileUtils.scala:121) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively$(SparkFileUtils.scala:120) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1126) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4(ShutdownHookManager.scala:65) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4$adapted(ShutdownHookManager.scala:62) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36) ~[scala-library-2.12.18.jar:?]
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33) ~[scala-library-2.12.18.jar:?]
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198) ~[scala-library-2.12.18.jar:?]
+	at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$2(ShutdownHookManager.scala:62) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:214) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$2(ShutdownHookManager.scala:188) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23) ~[scala-library-2.12.18.jar:?]
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1928) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$1(ShutdownHookManager.scala:188) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23) [scala-library-2.12.18.jar:?]
+	at scala.util.Try$.apply(Try.scala:213) [scala-library-2.12.18.jar:?]
+	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:188) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:178) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:842) [?:?]
+2025-12-09 14:04:14.010 [main] WARN  org.apache.spark.SparkEnv - Exception while deleting Spark temp dir: C:\Users\Rouna\AppData\Local\Temp\spark-dd0d653f-f445-407e-901e-3a6852a8d65b\userFiles-fb671553-f4ca-4f42-ad12-7e43d89725dd
+java.nio.file.NoSuchFileException: C:\Users\Rouna\AppData\Local\Temp\spark-dd0d653f-f445-407e-901e-3a6852a8d65b\userFiles-fb671553-f4ca-4f42-ad12-7e43d89725dd
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[?:?]
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53) ~[?:?]
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:199) ~[?:?]
+	at java.nio.file.Files.readAttributes(Files.java:1851) ~[?:?]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:124) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:117) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:90) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively(SparkFileUtils.scala:121) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively$(SparkFileUtils.scala:120) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1126) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.SparkEnv.stop(SparkEnv.scala:108) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.SparkContext.$anonfun$stop$25(SparkContext.scala:2310) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1375) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:2310) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:2216) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.api.java.JavaSparkContext.stop(JavaSparkContext.scala:550) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at com.ir.spark.SearchEngineSpark.shutdown(SearchEngineSpark.java:773) [classes/:?]
+	at com.ir.spark.SearchEngineSpark.main(SearchEngineSpark.java:820) [classes/:?]
+2025-12-09 14:04:39.064 [main] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2025-12-09 14:04:40.022 [main] INFO  org.sparkproject.jetty.util.log - Logging initialized @2610ms to org.sparkproject.jetty.util.log.Slf4jLog
+2025-12-09 14:04:40.113 [main] INFO  org.sparkproject.jetty.server.Server - jetty-9.4.52.v20230823; built: 2023-08-23T19:29:37.669Z; git: abdcda73818a1a2c705da276edb0bf6581e7997e; jvm 17.0.12+8-LTS-286
+2025-12-09 14:04:40.136 [main] INFO  org.sparkproject.jetty.server.Server - Started @2725ms
+2025-12-09 14:04:40.174 [main] WARN  org.apache.spark.util.Utils - Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+2025-12-09 14:04:40.190 [main] INFO  org.sparkproject.jetty.server.AbstractConnector - Started ServerConnector@15639440{HTTP/1.1, (http/1.1)}{0.0.0.0:4041}
+2025-12-09 14:04:40.219 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@20ab3e3a{/,null,AVAILABLE,@Spark}
+2025-12-09 14:04:40.578 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Stopped o.s.j.s.ServletContextHandler@20ab3e3a{/,null,STOPPED,@Spark}
+2025-12-09 14:04:40.582 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@267cde2e{/jobs,null,AVAILABLE,@Spark}
+2025-12-09 14:04:40.583 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@56dd6efa{/jobs/json,null,AVAILABLE,@Spark}
+2025-12-09 14:04:40.583 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@228bda54{/jobs/job,null,AVAILABLE,@Spark}
+2025-12-09 14:04:40.584 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@b3e86d5{/jobs/job/json,null,AVAILABLE,@Spark}
+2025-12-09 14:04:40.585 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@e111c7c{/stages,null,AVAILABLE,@Spark}
+2025-12-09 14:04:40.586 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@32f96bba{/stages/json,null,AVAILABLE,@Spark}
+2025-12-09 14:04:40.588 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@76ececd{/stages/stage,null,AVAILABLE,@Spark}
+2025-12-09 14:04:40.589 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1682c08c{/stages/stage/json,null,AVAILABLE,@Spark}
+2025-12-09 14:04:40.590 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4eb9f2af{/stages/pool,null,AVAILABLE,@Spark}
+2025-12-09 14:04:40.592 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4ace284d{/stages/pool/json,null,AVAILABLE,@Spark}
+2025-12-09 14:04:40.593 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@76d72b5b{/storage,null,AVAILABLE,@Spark}
+2025-12-09 14:04:40.594 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@479b5066{/storage/json,null,AVAILABLE,@Spark}
+2025-12-09 14:04:40.596 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2b1cd7bc{/storage/rdd,null,AVAILABLE,@Spark}
+2025-12-09 14:04:40.598 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2e32fc22{/storage/rdd/json,null,AVAILABLE,@Spark}
+2025-12-09 14:04:40.600 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@72bdd7c7{/environment,null,AVAILABLE,@Spark}
+2025-12-09 14:04:40.601 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@44fdce3c{/environment/json,null,AVAILABLE,@Spark}
+2025-12-09 14:04:40.602 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6d33a66e{/executors,null,AVAILABLE,@Spark}
+2025-12-09 14:04:40.603 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5b20706{/executors/json,null,AVAILABLE,@Spark}
+2025-12-09 14:04:40.605 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@66de00f2{/executors/threadDump,null,AVAILABLE,@Spark}
+2025-12-09 14:04:40.606 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@79d82f66{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2025-12-09 14:04:40.607 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@ffd4cba{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2025-12-09 14:04:40.609 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@670f2466{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2025-12-09 14:04:40.633 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@bfec2f9{/static,null,AVAILABLE,@Spark}
+2025-12-09 14:04:40.635 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7c663eaf{/,null,AVAILABLE,@Spark}
+2025-12-09 14:04:40.639 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1e692555{/api,null,AVAILABLE,@Spark}
+2025-12-09 14:04:40.640 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3c9c6245{/jobs/job/kill,null,AVAILABLE,@Spark}
+2025-12-09 14:04:40.641 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1d4fb213{/stages/stage/kill,null,AVAILABLE,@Spark}
+2025-12-09 14:04:40.651 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@22c53d82{/metrics/json,null,AVAILABLE,@Spark}
+2025-12-09 14:05:00.923 [main] INFO  org.sparkproject.jetty.server.AbstractConnector - Stopped Spark@15639440{HTTP/1.1, (http/1.1)}{0.0.0.0:4041}
+2025-12-09 14:07:25.247 [main] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2025-12-09 14:07:26.146 [main] INFO  org.sparkproject.jetty.util.log - Logging initialized @2574ms to org.sparkproject.jetty.util.log.Slf4jLog
+2025-12-09 14:07:26.241 [main] INFO  org.sparkproject.jetty.server.Server - jetty-9.4.52.v20230823; built: 2023-08-23T19:29:37.669Z; git: abdcda73818a1a2c705da276edb0bf6581e7997e; jvm 17.0.12+8-LTS-286
+2025-12-09 14:07:26.258 [main] INFO  org.sparkproject.jetty.server.Server - Started @2688ms
+2025-12-09 14:07:26.291 [main] WARN  org.apache.spark.util.Utils - Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+2025-12-09 14:07:26.308 [main] INFO  org.sparkproject.jetty.server.AbstractConnector - Started ServerConnector@32e54a9d{HTTP/1.1, (http/1.1)}{0.0.0.0:4041}
+2025-12-09 14:07:26.332 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@69fe0ed4{/,null,AVAILABLE,@Spark}
+2025-12-09 14:07:26.672 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Stopped o.s.j.s.ServletContextHandler@69fe0ed4{/,null,STOPPED,@Spark}
+2025-12-09 14:07:26.674 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3625a016{/jobs,null,AVAILABLE,@Spark}
+2025-12-09 14:07:26.676 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@609e57da{/jobs/json,null,AVAILABLE,@Spark}
+2025-12-09 14:07:26.678 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1f1cddf3{/jobs/job,null,AVAILABLE,@Spark}
+2025-12-09 14:07:26.680 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@75b6dd5b{/jobs/job/json,null,AVAILABLE,@Spark}
+2025-12-09 14:07:26.681 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@72b43104{/stages,null,AVAILABLE,@Spark}
+2025-12-09 14:07:26.681 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4d0e54e0{/stages/json,null,AVAILABLE,@Spark}
+2025-12-09 14:07:26.684 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@72eb6200{/stages/stage,null,AVAILABLE,@Spark}
+2025-12-09 14:07:26.685 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7affc159{/stages/stage/json,null,AVAILABLE,@Spark}
+2025-12-09 14:07:26.686 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3fd05b3e{/stages/pool,null,AVAILABLE,@Spark}
+2025-12-09 14:07:26.688 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4a481728{/stages/pool/json,null,AVAILABLE,@Spark}
+2025-12-09 14:07:26.689 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@77fa9381{/storage,null,AVAILABLE,@Spark}
+2025-12-09 14:07:26.690 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7cac93fe{/storage/json,null,AVAILABLE,@Spark}
+2025-12-09 14:07:26.691 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@64deb58f{/storage/rdd,null,AVAILABLE,@Spark}
+2025-12-09 14:07:26.694 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@33379242{/storage/rdd/json,null,AVAILABLE,@Spark}
+2025-12-09 14:07:26.697 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3f5156a6{/environment,null,AVAILABLE,@Spark}
+2025-12-09 14:07:26.698 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7d17ee50{/environment/json,null,AVAILABLE,@Spark}
+2025-12-09 14:07:26.699 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@712c5463{/executors,null,AVAILABLE,@Spark}
+2025-12-09 14:07:26.700 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2f14b0f6{/executors/json,null,AVAILABLE,@Spark}
+2025-12-09 14:07:26.702 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@16aed49f{/executors/threadDump,null,AVAILABLE,@Spark}
+2025-12-09 14:07:26.703 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6c479fdf{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2025-12-09 14:07:26.704 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@19b206ee{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2025-12-09 14:07:26.706 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5f1483fd{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2025-12-09 14:07:26.720 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6e03db1f{/static,null,AVAILABLE,@Spark}
+2025-12-09 14:07:26.721 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6d091cad{/,null,AVAILABLE,@Spark}
+2025-12-09 14:07:26.725 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3bb5ceb{/api,null,AVAILABLE,@Spark}
+2025-12-09 14:07:26.728 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5584d9c6{/jobs/job/kill,null,AVAILABLE,@Spark}
+2025-12-09 14:07:26.729 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6d0be7ab{/stages/stage/kill,null,AVAILABLE,@Spark}
+2025-12-09 14:07:26.737 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@63300c4b{/metrics/json,null,AVAILABLE,@Spark}
+2025-12-09 14:07:28.798 [main] INFO  org.sparkproject.jetty.server.AbstractConnector - Stopped Spark@32e54a9d{HTTP/1.1, (http/1.1)}{0.0.0.0:4041}
+2025-12-09 14:08:16.274 [main] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2025-12-09 14:08:17.308 [main] INFO  org.sparkproject.jetty.util.log - Logging initialized @2695ms to org.sparkproject.jetty.util.log.Slf4jLog
+2025-12-09 14:08:17.431 [main] INFO  org.sparkproject.jetty.server.Server - jetty-9.4.52.v20230823; built: 2023-08-23T19:29:37.669Z; git: abdcda73818a1a2c705da276edb0bf6581e7997e; jvm 17.0.12+8-LTS-286
+2025-12-09 14:08:17.453 [main] INFO  org.sparkproject.jetty.server.Server - Started @2841ms
+2025-12-09 14:08:17.482 [main] WARN  org.apache.spark.util.Utils - Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+2025-12-09 14:08:17.496 [main] INFO  org.sparkproject.jetty.server.AbstractConnector - Started ServerConnector@32e54a9d{HTTP/1.1, (http/1.1)}{0.0.0.0:4041}
+2025-12-09 14:08:17.521 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@69fe0ed4{/,null,AVAILABLE,@Spark}
+2025-12-09 14:08:17.830 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Stopped o.s.j.s.ServletContextHandler@69fe0ed4{/,null,STOPPED,@Spark}
+2025-12-09 14:08:17.831 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3625a016{/jobs,null,AVAILABLE,@Spark}
+2025-12-09 14:08:17.833 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@609e57da{/jobs/json,null,AVAILABLE,@Spark}
+2025-12-09 14:08:17.834 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1f1cddf3{/jobs/job,null,AVAILABLE,@Spark}
+2025-12-09 14:08:17.835 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@75b6dd5b{/jobs/job/json,null,AVAILABLE,@Spark}
+2025-12-09 14:08:17.836 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@72b43104{/stages,null,AVAILABLE,@Spark}
+2025-12-09 14:08:17.838 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4d0e54e0{/stages/json,null,AVAILABLE,@Spark}
+2025-12-09 14:08:17.840 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@72eb6200{/stages/stage,null,AVAILABLE,@Spark}
+2025-12-09 14:08:17.841 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7affc159{/stages/stage/json,null,AVAILABLE,@Spark}
+2025-12-09 14:08:17.843 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3fd05b3e{/stages/pool,null,AVAILABLE,@Spark}
+2025-12-09 14:08:17.844 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4a481728{/stages/pool/json,null,AVAILABLE,@Spark}
+2025-12-09 14:08:17.845 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@77fa9381{/storage,null,AVAILABLE,@Spark}
+2025-12-09 14:08:17.846 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7cac93fe{/storage/json,null,AVAILABLE,@Spark}
+2025-12-09 14:08:17.847 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@64deb58f{/storage/rdd,null,AVAILABLE,@Spark}
+2025-12-09 14:08:17.848 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@33379242{/storage/rdd/json,null,AVAILABLE,@Spark}
+2025-12-09 14:08:17.850 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3f5156a6{/environment,null,AVAILABLE,@Spark}
+2025-12-09 14:08:17.852 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7d17ee50{/environment/json,null,AVAILABLE,@Spark}
+2025-12-09 14:08:17.854 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@712c5463{/executors,null,AVAILABLE,@Spark}
+2025-12-09 14:08:17.856 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2f14b0f6{/executors/json,null,AVAILABLE,@Spark}
+2025-12-09 14:08:17.857 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@16aed49f{/executors/threadDump,null,AVAILABLE,@Spark}
+2025-12-09 14:08:17.858 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6c479fdf{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2025-12-09 14:08:17.859 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@19b206ee{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2025-12-09 14:08:17.860 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5f1483fd{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2025-12-09 14:08:17.879 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6e03db1f{/static,null,AVAILABLE,@Spark}
+2025-12-09 14:08:17.880 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6d091cad{/,null,AVAILABLE,@Spark}
+2025-12-09 14:08:17.883 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3bb5ceb{/api,null,AVAILABLE,@Spark}
+2025-12-09 14:08:17.885 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5584d9c6{/jobs/job/kill,null,AVAILABLE,@Spark}
+2025-12-09 14:08:17.887 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6d0be7ab{/stages/stage/kill,null,AVAILABLE,@Spark}
+2025-12-09 14:08:17.893 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@63300c4b{/metrics/json,null,AVAILABLE,@Spark}
+2025-12-09 14:24:31.820 [main] INFO  org.sparkproject.jetty.server.AbstractConnector - Stopped Spark@32e54a9d{HTTP/1.1, (http/1.1)}{0.0.0.0:4041}
+2025-12-09 14:24:31.926 [main] ERROR org.apache.spark.storage.DiskBlockManager - Exception while deleting local spark dir: C:\Users\Rouna\AppData\Local\Temp\blockmgr-fa686468-4da8-4db0-8d1a-ae355810df4e
+java.io.IOException: Failed to list files for dir: C:\Users\Rouna\AppData\Local\Temp\blockmgr-fa686468-4da8-4db0-8d1a-ae355810df4e\30
+	at org.apache.spark.network.util.JavaUtils.listFilesSafely(JavaUtils.java:181) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:142) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:117) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:129) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:117) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:90) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively(SparkFileUtils.scala:121) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively$(SparkFileUtils.scala:120) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1126) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.storage.DiskBlockManager.$anonfun$doStop$1(DiskBlockManager.scala:368) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.storage.DiskBlockManager.$anonfun$doStop$1$adapted(DiskBlockManager.scala:364) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36) ~[scala-library-2.12.18.jar:?]
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33) ~[scala-library-2.12.18.jar:?]
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198) ~[scala-library-2.12.18.jar:?]
+	at org.apache.spark.storage.DiskBlockManager.doStop(DiskBlockManager.scala:364) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.storage.DiskBlockManager.stop(DiskBlockManager.scala:359) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.storage.BlockManager.stop(BlockManager.scala:2124) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.SparkEnv.stop(SparkEnv.scala:95) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.SparkContext.$anonfun$stop$25(SparkContext.scala:2310) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1375) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:2310) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:2216) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.api.java.JavaSparkContext.stop(JavaSparkContext.scala:550) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at com.ir.spark.SearchEngineSpark.shutdown(SearchEngineSpark.java:775) [classes/:?]
+	at com.ir.spark.SearchEngineSpark.main(SearchEngineSpark.java:822) [classes/:?]
+2025-12-09 14:24:31.926 [shutdown-hook-0] ERROR org.apache.spark.storage.DiskBlockManager - Exception while deleting local spark dir: C:\Users\Rouna\AppData\Local\Temp\blockmgr-fa686468-4da8-4db0-8d1a-ae355810df4e
+java.io.IOException: Failed to list files for dir: C:\Users\Rouna\AppData\Local\Temp\blockmgr-fa686468-4da8-4db0-8d1a-ae355810df4e\3a
+	at org.apache.spark.network.util.JavaUtils.listFilesSafely(JavaUtils.java:181) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:142) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:117) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:129) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:117) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:90) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively(SparkFileUtils.scala:121) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively$(SparkFileUtils.scala:120) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1126) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.storage.DiskBlockManager.$anonfun$doStop$1(DiskBlockManager.scala:368) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.storage.DiskBlockManager.$anonfun$doStop$1$adapted(DiskBlockManager.scala:364) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36) ~[scala-library-2.12.18.jar:?]
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33) ~[scala-library-2.12.18.jar:?]
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198) ~[scala-library-2.12.18.jar:?]
+	at org.apache.spark.storage.DiskBlockManager.doStop(DiskBlockManager.scala:364) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.storage.DiskBlockManager.$anonfun$addShutdownHook$2(DiskBlockManager.scala:346) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:214) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$2(ShutdownHookManager.scala:188) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23) ~[scala-library-2.12.18.jar:?]
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1928) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$1(ShutdownHookManager.scala:188) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23) [scala-library-2.12.18.jar:?]
+	at scala.util.Try$.apply(Try.scala:213) [scala-library-2.12.18.jar:?]
+	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:188) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:178) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:842) [?:?]
+2025-12-09 14:24:31.942 [shutdown-hook-0] ERROR org.apache.spark.util.ShutdownHookManager - Exception while deleting Spark temp dir: C:\Users\Rouna\AppData\Local\Temp\spark-1efbf6b1-e5a0-4196-8b8c-7c79f3d74e93\userFiles-0c8351c2-e56d-46c8-870d-edbf975dbabb
+java.nio.file.NoSuchFileException: C:\Users\Rouna\AppData\Local\Temp\spark-1efbf6b1-e5a0-4196-8b8c-7c79f3d74e93\userFiles-0c8351c2-e56d-46c8-870d-edbf975dbabb
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[?:?]
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53) ~[?:?]
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:199) ~[?:?]
+	at java.nio.file.Files.readAttributes(Files.java:1851) ~[?:?]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:124) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:117) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:90) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively(SparkFileUtils.scala:121) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively$(SparkFileUtils.scala:120) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1126) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4(ShutdownHookManager.scala:65) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4$adapted(ShutdownHookManager.scala:62) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36) ~[scala-library-2.12.18.jar:?]
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33) ~[scala-library-2.12.18.jar:?]
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198) ~[scala-library-2.12.18.jar:?]
+	at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$2(ShutdownHookManager.scala:62) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:214) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$2(ShutdownHookManager.scala:188) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23) ~[scala-library-2.12.18.jar:?]
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1928) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$1(ShutdownHookManager.scala:188) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23) [scala-library-2.12.18.jar:?]
+	at scala.util.Try$.apply(Try.scala:213) [scala-library-2.12.18.jar:?]
+	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:188) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:178) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:842) [?:?]
+2025-12-09 14:24:31.951 [main] WARN  org.apache.spark.SparkEnv - Exception while deleting Spark temp dir: C:\Users\Rouna\AppData\Local\Temp\spark-1efbf6b1-e5a0-4196-8b8c-7c79f3d74e93\userFiles-0c8351c2-e56d-46c8-870d-edbf975dbabb
+java.nio.file.NoSuchFileException: C:\Users\Rouna\AppData\Local\Temp\spark-1efbf6b1-e5a0-4196-8b8c-7c79f3d74e93\userFiles-0c8351c2-e56d-46c8-870d-edbf975dbabb
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[?:?]
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53) ~[?:?]
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:199) ~[?:?]
+	at java.nio.file.Files.readAttributes(Files.java:1851) ~[?:?]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:124) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:117) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:90) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively(SparkFileUtils.scala:121) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively$(SparkFileUtils.scala:120) ~[spark-common-utils_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1126) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.SparkEnv.stop(SparkEnv.scala:108) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.SparkContext.$anonfun$stop$25(SparkContext.scala:2310) ~[spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1375) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:2310) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:2216) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at org.apache.spark.api.java.JavaSparkContext.stop(JavaSparkContext.scala:550) [spark-core_2.12-3.5.0.jar:3.5.0]
+	at com.ir.spark.SearchEngineSpark.shutdown(SearchEngineSpark.java:775) [classes/:?]
+	at com.ir.spark.SearchEngineSpark.main(SearchEngineSpark.java:822) [classes/:?]
+2025-12-09 14:28:15.428 [main] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2025-12-09 14:28:16.512 [main] INFO  org.sparkproject.jetty.util.log - Logging initialized @8807ms to org.sparkproject.jetty.util.log.Slf4jLog
+2025-12-09 14:28:16.677 [main] INFO  org.sparkproject.jetty.server.Server - jetty-9.4.52.v20230823; built: 2023-08-23T19:29:37.669Z; git: abdcda73818a1a2c705da276edb0bf6581e7997e; jvm 17.0.12+8-LTS-286
+2025-12-09 14:28:16.712 [main] INFO  org.sparkproject.jetty.server.Server - Started @9009ms
+2025-12-09 14:28:16.770 [main] WARN  org.apache.spark.util.Utils - Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+2025-12-09 14:28:16.797 [main] INFO  org.sparkproject.jetty.server.AbstractConnector - Started ServerConnector@32e54a9d{HTTP/1.1, (http/1.1)}{0.0.0.0:4041}
+2025-12-09 14:28:16.846 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@69fe0ed4{/,null,AVAILABLE,@Spark}
+2025-12-09 14:28:17.466 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Stopped o.s.j.s.ServletContextHandler@69fe0ed4{/,null,STOPPED,@Spark}
+2025-12-09 14:28:17.468 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3625a016{/jobs,null,AVAILABLE,@Spark}
+2025-12-09 14:28:17.469 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@609e57da{/jobs/json,null,AVAILABLE,@Spark}
+2025-12-09 14:28:17.471 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1f1cddf3{/jobs/job,null,AVAILABLE,@Spark}
+2025-12-09 14:28:17.473 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@75b6dd5b{/jobs/job/json,null,AVAILABLE,@Spark}
+2025-12-09 14:28:17.475 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@72b43104{/stages,null,AVAILABLE,@Spark}
+2025-12-09 14:28:17.477 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4d0e54e0{/stages/json,null,AVAILABLE,@Spark}
+2025-12-09 14:28:17.479 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@72eb6200{/stages/stage,null,AVAILABLE,@Spark}
+2025-12-09 14:28:17.481 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7affc159{/stages/stage/json,null,AVAILABLE,@Spark}
+2025-12-09 14:28:17.484 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3fd05b3e{/stages/pool,null,AVAILABLE,@Spark}
+2025-12-09 14:28:17.487 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4a481728{/stages/pool/json,null,AVAILABLE,@Spark}
+2025-12-09 14:28:17.488 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@77fa9381{/storage,null,AVAILABLE,@Spark}
+2025-12-09 14:28:17.490 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7cac93fe{/storage/json,null,AVAILABLE,@Spark}
+2025-12-09 14:28:17.492 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@64deb58f{/storage/rdd,null,AVAILABLE,@Spark}
+2025-12-09 14:28:17.494 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@33379242{/storage/rdd/json,null,AVAILABLE,@Spark}
+2025-12-09 14:28:17.496 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3f5156a6{/environment,null,AVAILABLE,@Spark}
+2025-12-09 14:28:17.499 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7d17ee50{/environment/json,null,AVAILABLE,@Spark}
+2025-12-09 14:28:17.503 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@712c5463{/executors,null,AVAILABLE,@Spark}
+2025-12-09 14:28:17.506 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2f14b0f6{/executors/json,null,AVAILABLE,@Spark}
+2025-12-09 14:28:17.508 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@16aed49f{/executors/threadDump,null,AVAILABLE,@Spark}
+2025-12-09 14:28:17.510 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6c479fdf{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2025-12-09 14:28:17.515 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@19b206ee{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2025-12-09 14:28:17.520 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5f1483fd{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2025-12-09 14:28:17.540 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6e03db1f{/static,null,AVAILABLE,@Spark}
+2025-12-09 14:28:17.541 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6d091cad{/,null,AVAILABLE,@Spark}
+2025-12-09 14:28:17.544 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3bb5ceb{/api,null,AVAILABLE,@Spark}
+2025-12-09 14:28:17.546 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5584d9c6{/jobs/job/kill,null,AVAILABLE,@Spark}
+2025-12-09 14:28:17.548 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6d0be7ab{/stages/stage/kill,null,AVAILABLE,@Spark}
+2025-12-09 14:28:17.558 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@63300c4b{/metrics/json,null,AVAILABLE,@Spark}
+2025-12-09 14:28:21.015 [main] INFO  org.sparkproject.jetty.server.AbstractConnector - Stopped Spark@32e54a9d{HTTP/1.1, (http/1.1)}{0.0.0.0:4041}
+2025-12-09 14:29:53.512 [main] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2025-12-09 14:29:54.559 [main] INFO  org.sparkproject.jetty.util.log - Logging initialized @2700ms to org.sparkproject.jetty.util.log.Slf4jLog
+2025-12-09 14:29:54.668 [main] INFO  org.sparkproject.jetty.server.Server - jetty-9.4.52.v20230823; built: 2023-08-23T19:29:37.669Z; git: abdcda73818a1a2c705da276edb0bf6581e7997e; jvm 17.0.12+8-LTS-286
+2025-12-09 14:29:54.683 [main] INFO  org.sparkproject.jetty.server.Server - Started @2825ms
+2025-12-09 14:29:54.714 [main] WARN  org.apache.spark.util.Utils - Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+2025-12-09 14:29:54.729 [main] INFO  org.sparkproject.jetty.server.AbstractConnector - Started ServerConnector@32e54a9d{HTTP/1.1, (http/1.1)}{0.0.0.0:4041}
+2025-12-09 14:29:54.755 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@69fe0ed4{/,null,AVAILABLE,@Spark}
+2025-12-09 14:29:55.143 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Stopped o.s.j.s.ServletContextHandler@69fe0ed4{/,null,STOPPED,@Spark}
+2025-12-09 14:29:55.145 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3625a016{/jobs,null,AVAILABLE,@Spark}
+2025-12-09 14:29:55.146 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@609e57da{/jobs/json,null,AVAILABLE,@Spark}
+2025-12-09 14:29:55.147 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1f1cddf3{/jobs/job,null,AVAILABLE,@Spark}
+2025-12-09 14:29:55.148 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@75b6dd5b{/jobs/job/json,null,AVAILABLE,@Spark}
+2025-12-09 14:29:55.149 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@72b43104{/stages,null,AVAILABLE,@Spark}
+2025-12-09 14:29:55.150 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4d0e54e0{/stages/json,null,AVAILABLE,@Spark}
+2025-12-09 14:29:55.152 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@72eb6200{/stages/stage,null,AVAILABLE,@Spark}
+2025-12-09 14:29:55.153 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7affc159{/stages/stage/json,null,AVAILABLE,@Spark}
+2025-12-09 14:29:55.154 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3fd05b3e{/stages/pool,null,AVAILABLE,@Spark}
+2025-12-09 14:29:55.155 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4a481728{/stages/pool/json,null,AVAILABLE,@Spark}
+2025-12-09 14:29:55.157 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@77fa9381{/storage,null,AVAILABLE,@Spark}
+2025-12-09 14:29:55.158 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7cac93fe{/storage/json,null,AVAILABLE,@Spark}
+2025-12-09 14:29:55.159 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@64deb58f{/storage/rdd,null,AVAILABLE,@Spark}
+2025-12-09 14:29:55.160 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@33379242{/storage/rdd/json,null,AVAILABLE,@Spark}
+2025-12-09 14:29:55.162 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3f5156a6{/environment,null,AVAILABLE,@Spark}
+2025-12-09 14:29:55.163 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7d17ee50{/environment/json,null,AVAILABLE,@Spark}
+2025-12-09 14:29:55.164 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@712c5463{/executors,null,AVAILABLE,@Spark}
+2025-12-09 14:29:55.165 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2f14b0f6{/executors/json,null,AVAILABLE,@Spark}
+2025-12-09 14:29:55.166 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@16aed49f{/executors/threadDump,null,AVAILABLE,@Spark}
+2025-12-09 14:29:55.168 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6c479fdf{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2025-12-09 14:29:55.171 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@19b206ee{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2025-12-09 14:29:55.173 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5f1483fd{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2025-12-09 14:29:55.196 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6e03db1f{/static,null,AVAILABLE,@Spark}
+2025-12-09 14:29:55.197 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6d091cad{/,null,AVAILABLE,@Spark}
+2025-12-09 14:29:55.200 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3bb5ceb{/api,null,AVAILABLE,@Spark}
+2025-12-09 14:29:55.202 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5584d9c6{/jobs/job/kill,null,AVAILABLE,@Spark}
+2025-12-09 14:29:55.205 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6d0be7ab{/stages/stage/kill,null,AVAILABLE,@Spark}
+2025-12-09 14:29:55.213 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@63300c4b{/metrics/json,null,AVAILABLE,@Spark}
+2025-12-09 14:29:57.109 [main] INFO  org.sparkproject.jetty.server.AbstractConnector - Stopped Spark@32e54a9d{HTTP/1.1, (http/1.1)}{0.0.0.0:4041}
+2025-12-09 14:31:08.269 [main] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2025-12-09 14:31:09.277 [main] INFO  org.sparkproject.jetty.util.log - Logging initialized @2693ms to org.sparkproject.jetty.util.log.Slf4jLog
+2025-12-09 14:31:09.386 [main] INFO  org.sparkproject.jetty.server.Server - jetty-9.4.52.v20230823; built: 2023-08-23T19:29:37.669Z; git: abdcda73818a1a2c705da276edb0bf6581e7997e; jvm 17.0.12+8-LTS-286
+2025-12-09 14:31:09.413 [main] INFO  org.sparkproject.jetty.server.Server - Started @2833ms
+2025-12-09 14:31:09.448 [main] WARN  org.apache.spark.util.Utils - Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+2025-12-09 14:31:09.464 [main] INFO  org.sparkproject.jetty.server.AbstractConnector - Started ServerConnector@32e54a9d{HTTP/1.1, (http/1.1)}{0.0.0.0:4041}
+2025-12-09 14:31:09.494 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@69fe0ed4{/,null,AVAILABLE,@Spark}
+2025-12-09 14:31:09.838 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Stopped o.s.j.s.ServletContextHandler@69fe0ed4{/,null,STOPPED,@Spark}
+2025-12-09 14:31:09.841 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3625a016{/jobs,null,AVAILABLE,@Spark}
+2025-12-09 14:31:09.842 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@609e57da{/jobs/json,null,AVAILABLE,@Spark}
+2025-12-09 14:31:09.843 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1f1cddf3{/jobs/job,null,AVAILABLE,@Spark}
+2025-12-09 14:31:09.844 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@75b6dd5b{/jobs/job/json,null,AVAILABLE,@Spark}
+2025-12-09 14:31:09.846 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@72b43104{/stages,null,AVAILABLE,@Spark}
+2025-12-09 14:31:09.847 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4d0e54e0{/stages/json,null,AVAILABLE,@Spark}
+2025-12-09 14:31:09.848 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@72eb6200{/stages/stage,null,AVAILABLE,@Spark}
+2025-12-09 14:31:09.849 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7affc159{/stages/stage/json,null,AVAILABLE,@Spark}
+2025-12-09 14:31:09.851 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3fd05b3e{/stages/pool,null,AVAILABLE,@Spark}
+2025-12-09 14:31:09.852 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4a481728{/stages/pool/json,null,AVAILABLE,@Spark}
+2025-12-09 14:31:09.853 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@77fa9381{/storage,null,AVAILABLE,@Spark}
+2025-12-09 14:31:09.854 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7cac93fe{/storage/json,null,AVAILABLE,@Spark}
+2025-12-09 14:31:09.855 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@64deb58f{/storage/rdd,null,AVAILABLE,@Spark}
+2025-12-09 14:31:09.857 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@33379242{/storage/rdd/json,null,AVAILABLE,@Spark}
+2025-12-09 14:31:09.860 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3f5156a6{/environment,null,AVAILABLE,@Spark}
+2025-12-09 14:31:09.862 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7d17ee50{/environment/json,null,AVAILABLE,@Spark}
+2025-12-09 14:31:09.863 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@712c5463{/executors,null,AVAILABLE,@Spark}
+2025-12-09 14:31:09.864 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2f14b0f6{/executors/json,null,AVAILABLE,@Spark}
+2025-12-09 14:31:09.865 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@16aed49f{/executors/threadDump,null,AVAILABLE,@Spark}
+2025-12-09 14:31:09.866 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6c479fdf{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2025-12-09 14:31:09.867 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@19b206ee{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2025-12-09 14:31:09.868 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5f1483fd{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2025-12-09 14:31:09.891 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6e03db1f{/static,null,AVAILABLE,@Spark}
+2025-12-09 14:31:09.893 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6d091cad{/,null,AVAILABLE,@Spark}
+2025-12-09 14:31:09.899 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3bb5ceb{/api,null,AVAILABLE,@Spark}
+2025-12-09 14:31:09.901 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5584d9c6{/jobs/job/kill,null,AVAILABLE,@Spark}
+2025-12-09 14:31:09.902 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6d0be7ab{/stages/stage/kill,null,AVAILABLE,@Spark}
+2025-12-09 14:31:09.915 [main] INFO  org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@63300c4b{/metrics/json,null,AVAILABLE,@Spark}
+2025-12-09 14:31:11.753 [main] INFO  org.sparkproject.jetty.server.AbstractConnector - Stopped Spark@32e54a9d{HTTP/1.1, (http/1.1)}{0.0.0.0:4041}

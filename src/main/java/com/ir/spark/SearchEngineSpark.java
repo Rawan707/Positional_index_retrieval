@@ -11,6 +11,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Scanner;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -31,6 +32,7 @@ public class SearchEngineSpark implements Serializable {
     private Map<String, Map<Integer, Double>> tfMatrix;
     private Map<String, Double> idfMap;
     private Map<String, Map<Integer, Double>> tfidfMatrix;
+    private Map<String, Map<Integer, Double>> normalizedTFIDF;
     private int totalDocuments = 10;
     
     // Document Position class to store document ID and positions
@@ -96,7 +98,8 @@ public class SearchEngineSpark implements Serializable {
 
             for (int pos = 0; pos < tokens.length; pos++) {
                 String term = tokens[pos].trim();
-                if (!term.isEmpty() && term.length() > 1) {
+                // Skip empty, single-character, or purely-numeric tokens (e.g., file names like "10")
+                if (!term.isEmpty() && term.length() > 1 && !term.matches("\\d+")) {
                     termPositions.add(new TermPosition(term, docContent._1(), pos + 1));
                 }
             }
@@ -144,6 +147,7 @@ public class SearchEngineSpark implements Serializable {
         tfMatrix = new HashMap<>();
         idfMap = new HashMap<>();
         tfidfMatrix = new HashMap<>();
+        normalizedTFIDF = new HashMap<>();
     }
     
     public void buildPositionalIndex() {
@@ -394,6 +398,90 @@ public class SearchEngineSpark implements Serializable {
             System.out.println();
         }
     }
+
+    public void computeNormalizedTFIDF() {
+        System.out.println("\n=== PART 2.3.1: Computing Normalized TF-IDF Matrix ===");
+
+        // compute document squared sums from tfidfMatrix (sum of squares per doc)
+        Map<Integer, Double> docSquaredSums = new HashMap<>();
+        for (Map<Integer, Double> docTFs : tfidfMatrix.values()) {
+            for (Map.Entry<Integer, Double> e : docTFs.entrySet()) {
+                int docId = e.getKey();
+                double val = e.getValue();
+                docSquaredSums.put(docId, docSquaredSums.getOrDefault(docId, 0.0) + val * val);
+            }
+        }
+
+        // compute L2 norm (sqrt of sum of squares) for each document
+        Map<Integer, Double> docNorms = new HashMap<>();
+        for (Map.Entry<Integer, Double> e : docSquaredSums.entrySet()) {
+            docNorms.put(e.getKey(), Math.sqrt(e.getValue()));
+        }
+
+        // DEBUG: print docSquaredSums and docNorms for doc 10
+        Double sqSum10 = docSquaredSums.get(10);
+        Double norm10 = docNorms.get(10);
+        System.out.println("[DEBUG] docSquaredSums[10] = " + (sqSum10 == null ? "null" : String.format("%.6f", sqSum10)));
+        System.out.println("[DEBUG] docNorms[10] = " + (norm10 == null ? "null" : String.format("%.6f", norm10)));
+
+        // DEBUG: print raw TF-IDF values for doc 10
+        System.out.println("[DEBUG] Raw TF-IDF values for doc 10:");
+        for (Map.Entry<String, Map<Integer, Double>> termEntryDbg : tfidfMatrix.entrySet()) {
+            String termDbg = termEntryDbg.getKey();
+            Double v = termEntryDbg.getValue().get(10);
+            if (v != null) {
+                System.out.println("  " + termDbg + " -> " + String.format("%.6f", v));
+            }
+        }
+
+        // build normalized TF-IDF matrix (term -> (doc -> normalizedValue))
+        normalizedTFIDF = new HashMap<>();
+
+        // Normalize TF-IDF values in-place on the existing tfidfMatrix (overwrite values)
+        for (Map.Entry<String, Map<Integer, Double>> termEntry : tfidfMatrix.entrySet()) {
+            Map<Integer, Double> docTFIDFs = termEntry.getValue();
+            for (Map.Entry<Integer, Double> docEntry : new ArrayList<>(docTFIDFs.entrySet())) {
+                int docId = docEntry.getKey();
+                double val = docEntry.getValue();
+                double norm = docNorms.getOrDefault(docId, 0.0);
+                double normalizedVal = (norm > 0.0) ? (val / norm) : 0.0;
+                // overwrite the existing tfidf value with its normalized value
+                docTFIDFs.put(docId, normalizedVal);
+            }
+        }
+
+        // Use the existing tfidfMatrix (now normalized) as the normalized TF-IDF mapping
+        normalizedTFIDF = tfidfMatrix;
+
+        // Print normalized TF-IDF matrix
+        System.out.println("\nNormalized TF-IDF Matrix:");
+        System.out.printf("%-15s", "Term");
+        for (int i = 1; i <= totalDocuments; i++) {
+            System.out.printf("%-12s", "d" + i);
+        }
+        System.out.println();
+        System.out.println("=" + "=".repeat(15 + 12 * totalDocuments));
+
+        List<String> sortedTerms = new ArrayList<>(normalizedTFIDF.keySet());
+        Collections.sort(sortedTerms);
+
+        for (String term : sortedTerms) {
+            System.out.printf("%-15s", term);
+            Map<Integer, Double> docNormsMap = normalizedTFIDF.get(term);
+            for (int i = 1; i <= totalDocuments; i++) {
+                Double nv = docNormsMap.get(i);
+                if (nv != null) {
+                    System.out.printf("%-12.4f", nv);
+                } else {
+                    System.out.printf("%-12s", "0.0000");
+                }
+            }
+            System.out.println();
+        }
+
+        // (Normalization done in-place on tfidfMatrix; per-document vectors are available
+        // by inspecting tfidfMatrix for a given docId across terms.)
+    }
     
     public void processPhraseQuery(String query) {
         System.out.println("\n=== PART 2.4: Phrase Query Search Engine ===");
@@ -442,12 +530,19 @@ public class SearchEngineSpark implements Serializable {
         queryNorm = Math.sqrt(queryNorm);
         System.out.printf("Query length (norm): %.4f%n", queryNorm);
         
-        // Calculate cosine similarity for each matching document
+        // Normalize query tf-idf vector
+        Map<String, Double> normalizedQuery = new HashMap<>();
+        if (queryNorm > 0.0) {
+            for (Map.Entry<String, Double> e : queryTFIDF.entrySet()) {
+                normalizedQuery.put(e.getKey(), e.getValue() / queryNorm);
+            }
+        }
+
+        // Calculate cosine similarity (using normalized vectors)
         List<DocumentScore> documentScores = new ArrayList<>();
-        
-        System.out.println("\nSimilarity Computation:");
+        System.out.println("\nSimilarity Computation (using normalized TF-IDF vectors):");
         for (int docId : matchingDocs) {
-            double similarity = cosineSimilarity(queryTFIDF, docId, queryNorm);
+            double similarity = cosineSimilarityNormalized(normalizedQuery, docId);
             documentScores.add(new DocumentScore(docId, similarity));
             System.out.printf("Document %d similarity: %.6f%n", docId, similarity);
         }
@@ -595,7 +690,8 @@ public class SearchEngineSpark implements Serializable {
         String[] tokens = processedQuery.toLowerCase().split("\\s+");
         for (String token : tokens) {
             token = token.trim();
-            if (!token.isEmpty()) {
+            // Skip empty, single-character, or purely-numeric tokens in queries as well
+            if (!token.isEmpty() && token.length() > 1 && !token.matches("\\d+")) {
                 terms.add(token);
             }
         }
@@ -629,6 +725,31 @@ public class SearchEngineSpark implements Serializable {
         }
         
         return dotProduct / (queryNorm * docNorm);
+    }
+
+    /**
+     * Compute cosine similarity assuming both query and document vectors are normalized (unit length).
+     * The normalizedQuery should be query vector divided by its norm, and normalizedTFIDF contains
+     * term -> (doc -> value) where each document vector is normalized.
+     */
+    private double cosineSimilarityNormalized(Map<String, Double> normalizedQuery, int docId) {
+        if (normalizedQuery == null || normalizedQuery.isEmpty() || normalizedTFIDF == null) return 0.0;
+
+        double dot = 0.0;
+        for (Map.Entry<String, Double> e : normalizedQuery.entrySet()) {
+            String term = e.getKey();
+            Double qVal = e.getValue();
+            if (qVal == null || qVal == 0.0) continue;
+
+            Map<Integer, Double> docMap = normalizedTFIDF.get(term);
+            if (docMap == null) continue;
+
+            Double dVal = docMap.get(docId);
+            if (dVal != null) {
+                dot += qVal * dVal;
+            }
+        }
+        return dot;
     }
     
     private double normalizeVector(Map<String, Double> vector) {
@@ -672,19 +793,27 @@ public class SearchEngineSpark implements Serializable {
             searchEngine.computeTF();
             searchEngine.computeIDF();
             searchEngine.computeTFIDF();
+            // Compute normalized TF-IDF vectors (unit-length per document)
+            searchEngine.computeNormalizedTFIDF();
             
-            // Part 3: Phrase Query Examples
-            String[] testQueries = {
-                "information retrieval",
-                "\"data mining\"",
-                "\"machine learning\" AND \"artificial intelligence\"",
-                "\"computer science\" OR \"information technology\"",
-                "\"data science\" AND NOT \"statistics\""
-            };
-            
-            for (String query : testQueries) {
-                searchEngine.processPhraseQuery(query);
-                System.out.println("\n" + "=".repeat(80));
+            // Part 3: Interactive Phrase Query Input
+            System.out.println("\n=== PART 3: Interactive Query Input ===");
+            try (Scanner scanner = new Scanner(System.in)) {
+                System.out.println("Enter queries (type 'exit' or press Enter on blank line to quit):");
+                while (true) {
+                    System.out.print("> ");
+                    String line = scanner.nextLine();
+                    if (line == null) break;
+                    line = line.trim();
+                    if (line.isEmpty() || line.equalsIgnoreCase("exit")) {
+                        System.out.println("Exiting query loop.");
+                        break;
+                    }
+                    searchEngine.processPhraseQuery(line);
+                    System.out.println("\n" + "=".repeat(80));
+                }
+            } catch (Exception e) {
+                System.err.println("Error reading queries from input: " + e.getMessage());
             }
             
         } catch (Exception e) {

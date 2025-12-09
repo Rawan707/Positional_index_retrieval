@@ -1,4 +1,3 @@
-<10    doc10: 1 >
 <angels    doc7: 2 ; doc8: 2 ; doc9: 2 >
 <antony    doc1: 2 ; doc2: 2 ; doc6: 2 >
 <brutus    doc1: 3 ; doc2: 3 ; doc4: 2 >
